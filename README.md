@@ -1,5 +1,8 @@
 # Additional file 2: analysis code and aggregate results
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23340448.svg)](https://doi.org/10.5281/zenodo.23340448)
+
+
 Reproducibility package for **Classroom perceptions and adolescent wellbeing at individual and classroom levels**. Reviewer-prompted revision; exploratory and **not preregistered**. No raw provider data, participant records or private working extracts are included.
 
 ## Contents
