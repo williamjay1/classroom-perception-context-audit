@@ -1,0 +1,589 @@
+{
+  "sample": {
+    "n": 3623,
+    "classes": 538,
+    "schools": 433,
+    "schools_multiple_classes": 82
+  },
+  "primary_model_label": "weighted_C7PW0_JK2",
+  "primary_uncertainty": "design based jackknife, normal 95% intervals",
+  "sampling_weight_status": "C7PW0 current parent+child survey weight chosen because W8SESL is parent-derived; C7CW0 child-only weight sensitivity; prior-response/complete-case selection not repaired by weights",
+  "historical_weight_error": "Original C7WEIGHT-weighted analysis withdrawn: provider C7WEIGHT is child body weight in pounds, not a sampling weight.",
+  "historical_SES_error": "Original extractor discarded all negative numbers; valid negative W8SESL values now retained, with only provider codes -7/-8/-9 removed.",
+  "sample_flow": {
+    "public_source_records": 21409,
+    "valid_school_English_class_identifier_records": 9305,
+    "valid_support_records_with_identifiers": 9115,
+    "records_in_groups_with_at_least5_context_reporters": 4109,
+    "eligible_valid_context_reporters": 4043,
+    "eligible_class_groups": 539,
+    "complete_case_before_survey_weight_filter": 3623,
+    "model_complete_cases": 3623,
+    "final_negative_SES_records": 1827,
+    "final_nonnegative_SES_records": 1796
+  },
+  "source_pool": {
+    "n": 9305,
+    "classes": 3800,
+    "schools": 2695,
+    "schools_multiple_classes": 603
+  },
+  "participant_description": {
+    "core_scores": {
+      "C7SDQINT": {
+        "valid_n": 3623,
+        "mean": 2.0112972674579073,
+        "sd": 0.5352966384368032,
+        "minimum": 1.0,
+        "maximum": 4.0
+      },
+      "classmate_support_score": {
+        "valid_n": 3623,
+        "mean": 3.7950593430858404,
+        "sd": 0.9014692226114195,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "prior_internalizing": {
+        "valid_n": 3623,
+        "mean": 2.093331493237648,
+        "sd": 0.6833924635339272,
+        "minimum": 1.0,
+        "maximum": 4.0
+      },
+      "W8SESL": {
+        "valid_n": 3623,
+        "mean": 0.04021529119514215,
+        "sd": 0.7807133735488389,
+        "minimum": -2.53,
+        "maximum": 2.42
+      }
+    },
+    "gender_counts": {
+      "male": 1826,
+      "female": 1797
+    },
+    "gender_coding": "provider GENDER1male/2female, descriptive only; not an eligibility criterion"
+  },
+  "complete_case_missingness": {
+    "eligible_class_records": 4109,
+    "overlapping_missing_n": {
+      "C7SDQINT": 64,
+      "classmate_support_score": 66,
+      "prior_internalizing": 76,
+      "W8SESL": 350
+    },
+    "nonpositive_C7PW0": 350
+  },
+  "reporter_pool_supporting_final_classes": {
+    "n": 4038,
+    "classes": 538,
+    "schools": 433,
+    "schools_multiple_classes": 82
+  },
+  "outcome_sd_reference": 0.5352227585608821,
+  "reporter_count_min": 5,
+  "reporter_count_max": 34,
+  "outcome_complete_case_class_sizes": {
+    "count": 538.0,
+    "mean": 6.734200743494424,
+    "std": 2.978817428211063,
+    "min": 1.0,
+    "25%": 5.0,
+    "50%": 6.0,
+    "75%": 8.0,
+    "max": 30.0
+  },
+  "outcome": "official provider C7SDQINT eighth-grade self-reported internalizing problems composite, eight negative problem items, valid1–4, higher=more problems; use provided score directly with no invented missing-item threshold",
+  "outcome_variable": "C7SDQINT",
+  "historical_mixed_outcome": "internalizing_score is the old researcher-defined mean of two SDQ and three NELS items, >=4of5; retained only for measurement sensitivity",
+  "measurement_decision": "Official outcome selected 7 October 2026 before seeing reanalysis results because of formal scoring/content coverage, not association strength",
+  "uncertainty_scope": "JK2 regression intervals condition on observed unweighted reporter means and complete-case set; school bootstrap conditions on those means and resamples current schools, not original kindergarten PSUs.",
+  "predictor": "mean C7CLSFR/C7CLSLIK/C7CLSFEL/C7CLSOTH/C7CLSCAR valid1–5 >=4 of5; English-class grouping J71CLASS nested within S7_ID",
+  "reliability": {
+    "support_alpha": {
+      "n": 3608,
+      "k": 5,
+      "alpha": 0.8954948482397
+    },
+    "outcome_alpha": {
+      "n": 3502,
+      "k": 8,
+      "alpha": 0.7484924338212728
+    },
+    "historical_mixed_outcome_alpha": {
+      "n": 3519,
+      "k": 5,
+      "alpha": 0.8002479741662805
+    },
+    "all_valid_reporters_for_final_classes": {
+      "n": 4038,
+      "groups": 538,
+      "arithmetic_mean_n": 7.5055762081784385,
+      "effective_n0": 7.503064463020301,
+      "reporters_min": 5,
+      "reporters_max": 34,
+      "icc1_anova": 0.048917182069420646,
+      "icc2_at_arithmetic_mean_n": 0.278517706986256,
+      "icc2_at_effective_n0": 0.2784504541656553,
+      "icc2_min_reporters": 0.20455992915313623,
+      "icc2_max_reporters": 0.6361952260751035,
+      "unweighted_descriptive": true
+    },
+    "final_model_complete_cases": {
+      "n": 3623,
+      "groups": 538,
+      "arithmetic_mean_n": 6.734200743494424,
+      "effective_n0": 6.731751570634746,
+      "reporters_min": 1,
+      "reporters_max": 30,
+      "icc1_anova": 0.045671976060305985,
+      "icc2_at_arithmetic_mean_n": 0.24373257546670407,
+      "icc2_at_effective_n0": 0.2436655313226556,
+      "icc2_min_reporters": 0.045671976060305985,
+      "icc2_max_reporters": 0.5894458009818037,
+      "unweighted_descriptive": true
+    },
+    "old_prethreshold_ICC": {
+      "n": 9018,
+      "groups": 3737,
+      "mean_cluster_size": 2.4131656408884132,
+      "icc1": 0.029059516231934725,
+      "icc2": 0.06735925693680621
+    }
+  },
+  "models": [
+    {
+      "label": "weighted_C7PW0_JK2",
+      "formula": "C7SDQINT ~ support_within + support_mean + prior_internalizing + W8SESL",
+      "weight": "C7PW0",
+      "school_fixed_effects": false,
+      "n": 3623,
+      "classes": 538,
+      "schools": 433,
+      "schools_multiple_classes": 82,
+      "replicates": 90,
+      "variance_factor": 1,
+      "outcome_sd_in_model_sample": 0.5352227585608821,
+      "uncertainty": "design based jackknife, normal 95% intervals",
+      "terms": {
+        "support_within": {
+          "estimate": -0.09320784353747136,
+          "se": 0.02222680449822602,
+          "ci95_low": -0.13677157984540722,
+          "ci95_high": -0.049644107229535495,
+          "p_two_sided": 2.7469730976483472e-05
+        },
+        "support_mean": {
+          "estimate": -0.048712192752601365,
+          "se": 0.03445462035836444,
+          "ci95_low": -0.11624200775599619,
+          "ci95_high": 0.01881762225079347,
+          "p_two_sided": 0.1574184983752026
+        }
+      },
+      "contextual_associations": {
+        "support": {
+          "estimate": 0.04449565078486999,
+          "se": 0.0433903142876934,
+          "ci95_low": -0.0405478024968828,
+          "ci95_high": 0.12953910406662278,
+          "p_two_sided": 0.3051394608500073
+        }
+      },
+      "model_columns": [
+        "Intercept",
+        "support_within",
+        "support_mean",
+        "prior_internalizing",
+        "W8SESL"
+      ],
+      "coefficient_covariance": [
+        [
+          0.023800626414012125,
+          0.00036602623616082064,
+          -0.005019626378519146,
+          -0.0021385504713139747,
+          1.9648726550961307e-05
+        ],
+        [
+          0.00036602623616082064,
+          0.0004940308382023604,
+          -0.00010078383587171424,
+          -2.776449255973202e-05,
+          -6.849504553725467e-05
+        ],
+        [
+          -0.005019626378519146,
+          -0.00010078383587171424,
+          0.0011871208640390214,
+          0.0002586394571240313,
+          -8.289477119681829e-05
+        ],
+        [
+          -0.0021385504713139747,
+          -2.776449255973202e-05,
+          0.0002586394571240313,
+          0.0005160987989136469,
+          0.00012574168270598323
+        ],
+        [
+          1.9648726550961307e-05,
+          -6.849504553725467e-05,
+          -8.289477119681829e-05,
+          0.00012574168270598323,
+          0.0004225938337581938
+        ]
+      ],
+      "replicate_method": "ECLS-K90 supplied JK2 replicate weights C7PW1–C7PW90; variance=sum squared deviations"
+    },
+    {
+      "label": "weighted_C7CW0_JK2",
+      "formula": "C7SDQINT ~ support_within + support_mean + prior_internalizing + W8SESL",
+      "weight": "C7CW0",
+      "school_fixed_effects": false,
+      "n": 3623,
+      "classes": 538,
+      "schools": 433,
+      "schools_multiple_classes": 82,
+      "replicates": 90,
+      "variance_factor": 1,
+      "outcome_sd_in_model_sample": 0.5352227585608821,
+      "uncertainty": "design based jackknife, normal 95% intervals",
+      "terms": {
+        "support_within": {
+          "estimate": -0.09919384599111966,
+          "se": 0.020863139323937824,
+          "ci95_low": -0.14008484767047913,
+          "ci95_high": -0.058302844311760194,
+          "p_two_sided": 1.9893577844929864e-06
+        },
+        "support_mean": {
+          "estimate": -0.047575182512537985,
+          "se": 0.03551875999342299,
+          "ci95_low": -0.11719067287516916,
+          "ci95_high": 0.022040307850093192,
+          "p_two_sided": 0.18042807372994252
+        }
+      },
+      "contextual_associations": {
+        "support": {
+          "estimate": 0.051618663478581676,
+          "se": 0.04247873667762846,
+          "ci95_low": -0.03163813051833075,
+          "ci95_high": 0.1348754574754941,
+          "p_two_sided": 0.22430326145940083
+        }
+      },
+      "model_columns": [
+        "Intercept",
+        "support_within",
+        "support_mean",
+        "prior_internalizing",
+        "W8SESL"
+      ],
+      "coefficient_covariance": [
+        [
+          0.024353135793172512,
+          0.00017494176941803064,
+          -0.005260202409279212,
+          -0.0020390728632128526,
+          0.00020606978595873253
+        ],
+        [
+          0.00017494176941803064,
+          0.0004352705824500408,
+          -5.379508790343567e-05,
+          -1.6395540421670242e-05,
+          -6.863758962764672e-05
+        ],
+        [
+          -0.005260202409279212,
+          -5.379508790343567e-05,
+          0.0012615823114703853,
+          0.00024891212263041765,
+          -0.00011674614327079324
+        ],
+        [
+          -0.0020390728632128526,
+          -1.6395540421670242e-05,
+          0.00024891212263041765,
+          0.0004967329376135468,
+          9.78844415041286e-05
+        ],
+        [
+          0.00020606978595873253,
+          -6.863758962764672e-05,
+          -0.00011674614327079324,
+          9.78844415041286e-05,
+          0.0004161418118366694
+        ]
+      ],
+      "replicate_method": "ECLS-K90 supplied JK2 replicate weights C7CW1–C7CW90; variance=sum squared deviations"
+    },
+    {
+      "label": "weighted_C7PW0_school_cluster",
+      "formula": "C7SDQINT ~ support_within + support_mean + prior_internalizing + W8SESL",
+      "weight": "C7PW0",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 433,
+      "df": 432,
+      "n": 3623,
+      "classes": 538,
+      "schools": 433,
+      "schools_multiple_classes": 82,
+      "outcome_sd_in_model_sample": 0.5352227585608821,
+      "r_squared": 0.07592896397719817,
+      "rank": 5,
+      "columns": 5,
+      "terms": {
+        "support_within": {
+          "estimate": -0.09320784353747134,
+          "se": 0.021729647336631148,
+          "ci95_low": -0.13591682454557885,
+          "ci95_high": -0.05049886252936382,
+          "p_two_sided": 2.2120464965846412e-05
+        },
+        "support_mean": {
+          "estimate": -0.04871219275260121,
+          "se": 0.03188480016763461,
+          "ci95_low": -0.11138082716302655,
+          "ci95_high": 0.013956441657824135,
+          "p_two_sided": 0.12730496941427613
+        }
+      },
+      "contextual_associations": {
+        "support": {
+          "estimate": 0.04449565078487013,
+          "se": 0.036793099519961306,
+          "ci95_low": -0.027820101251216915,
+          "ci95_high": 0.11681140282095717,
+          "p_two_sided": 0.2271907027145921
+        }
+      },
+      "residual_quantiles": {
+        "min": -1.4395480309962427,
+        "q01": -0.9784543769162323,
+        "q25": -0.3354932292757522,
+        "median": -0.011242044456712286,
+        "q75": 0.35142061040688,
+        "q99": 1.347758323547599,
+        "max": 1.8455690743114586
+      },
+      "school_bootstrap": {
+        "seed": 20261005,
+        "successful_replicates": 1000,
+        "unit": "school",
+        "point_estimate_beta_W": -0.09320784353747136,
+        "point_estimate_beta_B": -0.048712192752601365,
+        "intervals": {
+          "beta_W": {
+            "percentile_ci95_low": -0.135760325894809,
+            "percentile_ci95_high": -0.05080504991323001,
+            "se": 0.02169434155206863
+          },
+          "beta_B": {
+            "percentile_ci95_low": -0.1121964288680205,
+            "percentile_ci95_high": 0.009842080427559415,
+            "se": 0.03116165270700239
+          },
+          "beta_B_minus_beta_W": {
+            "percentile_ci95_low": -0.027667680203225114,
+            "percentile_ci95_high": 0.11177592055626681,
+            "se": 0.0359626006291038
+          }
+        }
+      }
+    },
+    {
+      "label": "weighted_C7CW0_school_cluster",
+      "formula": "C7SDQINT ~ support_within + support_mean + prior_internalizing + W8SESL",
+      "weight": "C7CW0",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 433,
+      "df": 432,
+      "n": 3623,
+      "classes": 538,
+      "schools": 433,
+      "schools_multiple_classes": 82,
+      "outcome_sd_in_model_sample": 0.5352227585608821,
+      "r_squared": 0.07514214353136783,
+      "rank": 5,
+      "columns": 5,
+      "terms": {
+        "support_within": {
+          "estimate": -0.09919384599111947,
+          "se": 0.020932774990360597,
+          "ci95_low": -0.14033659790330502,
+          "ci95_high": -0.05805109407893391,
+          "p_two_sided": 2.924002221728869e-06
+        },
+        "support_mean": {
+          "estimate": -0.047575182512538575,
+          "se": 0.03154764527092736,
+          "ci95_low": -0.10958114891656762,
+          "ci95_high": 0.01443078389149046,
+          "p_two_sided": 0.13227465236912872
+        }
+      },
+      "contextual_associations": {
+        "support": {
+          "estimate": 0.05161866347858089,
+          "se": 0.03561456332349153,
+          "ci95_low": -0.0183807104197191,
+          "ci95_high": 0.12161803737688089,
+          "p_two_sided": 0.14795993264118146
+        }
+      },
+      "residual_quantiles": {
+        "min": -1.4464873552563073,
+        "q01": -0.9859803982910733,
+        "q25": -0.33612430560815076,
+        "median": -0.0115613510199859,
+        "q75": 0.35206508737991515,
+        "q99": 1.3438460007406143,
+        "max": 1.8621082119398324
+      },
+      "school_bootstrap": {
+        "seed": 20261005,
+        "successful_replicates": 1000,
+        "unit": "school",
+        "point_estimate_beta_W": -0.09919384599111966,
+        "point_estimate_beta_B": -0.047575182512537985,
+        "intervals": {
+          "beta_W": {
+            "percentile_ci95_low": -0.14078092768380587,
+            "percentile_ci95_high": -0.058573367541581864,
+            "se": 0.02097573471619323
+          },
+          "beta_B": {
+            "percentile_ci95_low": -0.11057924890043697,
+            "percentile_ci95_high": 0.010981218425649168,
+            "se": 0.030976230271139212
+          },
+          "beta_B_minus_beta_W": {
+            "percentile_ci95_low": -0.018360510338273975,
+            "percentile_ci95_high": 0.11951032947380262,
+            "se": 0.03496690894632957
+          }
+        }
+      }
+    },
+    {
+      "label": "unweighted_school_cluster",
+      "formula": "C7SDQINT ~ support_within + support_mean + prior_internalizing + W8SESL",
+      "weight": "none",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 433,
+      "df": 432,
+      "n": 3623,
+      "classes": 538,
+      "schools": 433,
+      "schools_multiple_classes": 82,
+      "outcome_sd_in_model_sample": 0.5352227585608821,
+      "r_squared": 0.10018959314323406,
+      "rank": 5,
+      "columns": 5,
+      "terms": {
+        "support_within": {
+          "estimate": -0.1101660213046328,
+          "se": 0.01210575582438301,
+          "ci95_low": -0.1339595273649349,
+          "ci95_high": -0.08637251524433068,
+          "p_two_sided": 3.3372538681479745e-18
+        },
+        "support_mean": {
+          "estimate": -0.08127784719025835,
+          "se": 0.02313248389596461,
+          "ci95_low": -0.1267440620844884,
+          "ci95_high": -0.03581163229602829,
+          "p_two_sided": 0.0004887521451032539
+        }
+      },
+      "contextual_associations": {
+        "support": {
+          "estimate": 0.028888174114374443,
+          "se": 0.024452968867794283,
+          "ci95_low": -0.01917341504938154,
+          "ci95_high": 0.07694976327813043,
+          "p_two_sided": 0.23810294951318436
+        }
+      },
+      "residual_quantiles": {
+        "min": -1.5492895990070714,
+        "q01": -1.0199860731114694,
+        "q25": -0.36300560205275234,
+        "median": -0.03934866175089269,
+        "q75": 0.3238622047845481,
+        "q99": 1.338495350382788,
+        "max": 1.7834150672809521
+      },
+      "school_bootstrap": {
+        "seed": 20261005,
+        "successful_replicates": 1000,
+        "unit": "school",
+        "point_estimate_beta_W": -0.11016602130463292,
+        "point_estimate_beta_B": -0.08127784719025788,
+        "intervals": {
+          "beta_W": {
+            "percentile_ci95_low": -0.13453566071489365,
+            "percentile_ci95_high": -0.087643597406552,
+            "se": 0.01243759668073174
+          },
+          "beta_B": {
+            "percentile_ci95_low": -0.12792980692002737,
+            "percentile_ci95_high": -0.03757583624668499,
+            "se": 0.023005415790990375
+          },
+          "beta_B_minus_beta_W": {
+            "percentile_ci95_low": -0.019839390123108466,
+            "percentile_ci95_high": 0.07345322311103923,
+            "se": 0.02369830064525418
+          }
+        }
+      }
+    },
+    {
+      "label": "LOO_conditional_association",
+      "formula": "C7SDQINT ~ classmate_support_score + support_loo + prior_internalizing + W8SESL",
+      "weight": "C7PW0",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 433,
+      "df": 432,
+      "n": 3623,
+      "classes": 538,
+      "schools": 433,
+      "schools_multiple_classes": 82,
+      "outcome_sd_in_model_sample": 0.5352227585608821,
+      "r_squared": 0.07572247377004471,
+      "rank": 5,
+      "columns": 5,
+      "terms": {
+        "classmate_support_score": {
+          "estimate": -0.08721143323646452,
+          "se": 0.01970497259593999,
+          "ci95_low": -0.12594097575170693,
+          "ci95_high": -0.0484818907212221,
+          "p_two_sided": 1.217883516436063e-05
+        },
+        "support_loo": {
+          "estimate": 0.03211400867534689,
+          "se": 0.032591314234676365,
+          "ci95_low": -0.031943258297944754,
+          "ci95_high": 0.09617127564863853,
+          "p_two_sided": 0.32500135145996006
+        }
+      },
+      "contextual_associations": {},
+      "residual_quantiles": {
+        "min": -1.4386595695928635,
+        "q01": -0.9823780018616398,
+        "q25": -0.3334620297734583,
+        "median": -0.009899570578389083,
+        "q75": 0.34991971016289025,
+        "q99": 1.3497083334684112,
+        "max": 1.844601257194121
+      }
+    }
+  ]
+}

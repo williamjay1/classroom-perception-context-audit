@@ -1,0 +1,10 @@
+{
+  "manuscript.tex": {
+    "source_sha256": "ec0969f47284b8a27e6e34a117b855d478360fbd2577a2a4665387439c6dfffe",
+    "candidate_sha256": "a3d9dc66857673c4f5dc4a50b9116f0c7388432efba1c9c0ce7ef933a9fb32e0"
+  },
+  "manuscript_marked.tex": {
+    "source_sha256": "ade1cdcc1d2a111993209ff9597fdd4d5ab23d6cf64c8bb5fa013c67dfd86595",
+    "candidate_sha256": "7610852805c01e13a99429326c7f7a1af6eebc8640ecef08b6f55a41d80632f1"
+  }
+}

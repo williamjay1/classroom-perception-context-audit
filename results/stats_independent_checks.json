@@ -1,0 +1,505 @@
+{
+  "checks": [
+    {
+      "check": "CEPS/primary_joint/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/primary_joint/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_cluster_sensitivity/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_cluster_sensitivity/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/unweighted/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/unweighted/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/no_school_FE/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/no_school_FE/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_only/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/minimum_10_reporters/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/minimum_10_reporters/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/minimum_20_reporters/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/minimum_20_reporters/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/minimum_30_reporters/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/minimum_30_reporters/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/one_of_two_class_items/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/one_of_two_class_items/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/four_of_five_distress_items/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/four_of_five_distress_items/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_size_lower/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_size_lower/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_size_middle/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_size_middle/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_size_upper/class_support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS/class_size_upper/school_belonging_aggregated_to_class: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS/weighted_C7PW0_JK2/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS/weighted_C7CW0_JK2/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS/weighted_C7PW0_school_cluster/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS/weighted_C7CW0_school_cluster/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS/unweighted_school_cluster/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/FIN/support_BSBGSSB/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/FIN/disorder_BSBGSSB/disorder: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/FIN/support_BSBGSB/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/FIN/disorder_BSBGSB/disorder: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/ZAF/support_BSBGSSB/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/ZAF/disorder_BSBGSSB/disorder: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/ZAF/support_BSBGSB/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/ZAF/disorder_BSBGSB/disorder: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/KOR/support_BSBGSSB/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/KOR/disorder_BSBGSSB/disorder: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/KOR/support_BSBGSB/support: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "TIMSS/KOR/disorder_BSBGSB/disorder: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/NOR/country_joint/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/NOR/country_joint/school_safety: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/NOR/within_school_class/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/SWE/country_joint/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/SWE/country_joint/school_safety: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/POL/country_joint/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/POL/country_joint/school_safety: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/POL/within_school_class/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/FRA/country_joint/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/FRA/country_joint/school_safety: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/DNK/country_joint/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/DNK/country_joint/school_safety: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/DNK/within_school_class/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/ITA/country_joint/class_openness: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ICCS/ITA/country_joint/school_safety: B-W arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS source labels 0male/1female",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS includes both valid sex codes",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS source and fitted sample counts agree",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS education valid category ranges",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS migrant category ranges",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS official composite range1–4",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS official main eligible sample count",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "ECLS primary outcome and proper parent weight",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS full mean vs within/between fitted values",
+      "absolute_error": 3.042011087472929e-14,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "check": "CEPS equivalent full-mean contextual coefficient",
+      "absolute_error": 3.400058012914542e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "CEPS equivalent school-item class-mean contextual coefficient",
+      "absolute_error": 4.9682480351975755e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "LOO algebra mean - within/(n-1)",
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "check": "Old joint model -0.125535 arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "check": "Old joint model 0.026672 arithmetic",
+      "absolute_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "provider_label_audit": {
+    "TIMSS": {
+      "BSBM17A": {
+        "label": "MATH\\AGREE\\TEACHER EXPECTS TO DO",
+        "value_labels": {
+          "1.0": "Agree a lot",
+          "2.0": "Agree a little",
+          "3.0": "Disagree a little",
+          "4.0": "Disagree a lot",
+          "9.0": "Omitted or invalid"
+        }
+      },
+      "BSBM18A": {
+        "label": "MAT\\HOW OFTEN\\STUDENTS NOT LISTEN",
+        "value_labels": {
+          "1.0": "Every or almost every lesson",
+          "2.0": "About half the lessons",
+          "3.0": "Some lessons",
+          "4.0": "Never",
+          "9.0": "Omitted or invalid"
+        }
+      },
+      "BSBGSSB": {
+        "label": "Students Sense of School Belonging/SCL",
+        "value_labels": {
+          "999999.0": "Omitted or invalid"
+        }
+      },
+      "BSBGSB": {
+        "label": "Student Bullying/SCL",
+        "value_labels": {
+          "999999.0": "Omitted or invalid"
+        }
+      }
+    },
+    "ICCS": {
+      "IS4G16A": {
+        "label": "Your School/Discussing issues, how often happen/Teachers encourage students to make up their own minds",
+        "value_labels": {
+          "1.0": "Never",
+          "2.0": "Rarely",
+          "3.0": "Sometimes",
+          "4.0": "Often",
+          "7.0": "Invalid",
+          "8.0": "Not administered",
+          "9.0": "Omitted"
+        }
+      },
+      "IS4G18H": {
+        "label": "Your School/Teachers and students at your school/My school is a place where students feel safe",
+        "value_labels": {
+          "1.0": "Strongly agree",
+          "2.0": "Agree",
+          "3.0": "Disagree",
+          "4.0": "Strongly disagree",
+          "7.0": "Invalid",
+          "8.0": "Not administered",
+          "9.0": "Omitted"
+        }
+      },
+      "IS4G18I": {
+        "label": "Your School/Teachers and students at your school/I am afraid of being bullied by other students",
+        "value_labels": {
+          "1.0": "Strongly agree",
+          "2.0": "Agree",
+          "3.0": "Disagree",
+          "4.0": "Strongly disagree",
+          "7.0": "Invalid",
+          "8.0": "Not administered",
+          "9.0": "Omitted"
+        }
+      }
+    }
+  }
+}

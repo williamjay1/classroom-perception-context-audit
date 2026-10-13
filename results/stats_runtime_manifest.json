@@ -1,0 +1,82 @@
+{
+  "script_sha256": "cfd267c391074aba3c40220c30039c1386c1efda1668bcbbf64a65a0076b617a",
+  "runtime": "python (original runtime executable path omitted)",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.5.1",
+  "pandas": "3.0.5",
+  "statsmodels": "0.14.6",
+  "scipy": "1.18.0",
+  "pyreadstat": "1.3.6",
+  "sources_rerun_this_invocation": [
+    "CEPS",
+    "ECLS"
+  ],
+  "input_files": [
+    {
+      "path": "provider_inputs/CEPS_baseline_pooled_provider_v1_attempt2_20261007.dta",
+      "bytes": 93369076,
+      "sha256": "9e6cd4fa6bf2eee8496d8ed41c62a9a7039138d8ce2819e567a98c5546edfc97"
+    },
+    {
+      "path": "private_working_inputs/ecls_grade8_survey_extract.csv",
+      "bytes": 15542252,
+      "sha256": "21555a4155650e21ae9acdda76e9ac29f154291b6a49c4211be882f4fddb630d"
+    },
+    {
+      "path": "provider_inputs/bsgfinm7.sav",
+      "bytes": 7057986,
+      "sha256": "c34d760b52d6a8806553952d93f1cc162cc3114af3a7b13f5cbb602302a7e7c5"
+    },
+    {
+      "path": "provider_inputs/bsgzafm7.sav",
+      "bytes": 22005386,
+      "sha256": "124b5e4bdb248c0b61eae0b9d9f8c041c06fd86db552562bfca8afa1330dfe4f"
+    },
+    {
+      "path": "provider_inputs/bsgkorm7.sav",
+      "bytes": 5323114,
+      "sha256": "0b1310c474ea5fad4da35da24099b82e83925d1cd13c0ce1ee0d14a61f16b0b3"
+    },
+    {
+      "path": "provider_inputs/ISGNORC4.sav",
+      "bytes": 8552342,
+      "sha256": "d6110bf351920084a1b57feed8f16ed17e069813ac0eee4680e049ca13cd3ad7"
+    },
+    {
+      "path": "provider_inputs/ISGSWEC4.sav",
+      "bytes": 4977758,
+      "sha256": "5eabf333162417374666fcfd3bc42d327271afde3fdd7195369469d5a75be615"
+    },
+    {
+      "path": "provider_inputs/ISGPOLC4.sav",
+      "bytes": 6638062,
+      "sha256": "856a66eda9295fad2d43165fda23af99276f6b1cde97ae9fe4b6bd5c189ab7d0"
+    },
+    {
+      "path": "provider_inputs/ISGFRAC4.sav",
+      "bytes": 5360022,
+      "sha256": "30b5c0f98008a0651943bac59923f9b9c20609135c78d2c3df279c8e70e2d9f0"
+    },
+    {
+      "path": "provider_inputs/ISGDNKC4.sav",
+      "bytes": 7325062,
+      "sha256": "7c9a698345ec353aae666addbdd33111acea0f0ff7b296065675a73aba50c62b"
+    },
+    {
+      "path": "provider_inputs/ISGITAC4.sav",
+      "bytes": 4496486,
+      "sha256": "fb58f596461c5f266ac7e1ae98dbd4bac2a877a60778b52e0b008cf6dca2bd45"
+    }
+  ],
+  "outputs": [
+    {
+      "filename": "stats_verified_results.json",
+      "sha256": "09ef4aeaf5f99f1740d723e6635abf347facbbae41fcf97d796b45f4a8bcc8bc"
+    },
+    {
+      "filename": "stats_coefficients.csv",
+      "sha256": "f448593129ef4210c632b7dffc68436d2581bb5445ca7f4a0d11a7cc5b1e1065"
+    }
+  ],
+  "public_package_notice": "Local input/runtime paths are omitted. Original run hashes identify the audited inputs and original outputs; package_manifest.json identifies the packaged metadata-redacted outputs and scripts with portable default paths."
+}

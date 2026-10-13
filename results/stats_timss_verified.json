@@ -1,0 +1,1026 @@
+{
+  "FIN": {
+    "source": "provider_inputs/bsgfinm7.sav",
+    "source_sample": {
+      "n": 4874,
+      "classes": 369,
+      "schools": 154,
+      "schools_multiple_classes": 149
+    },
+    "models": [
+      {
+        "label": "support_BSBGSSB",
+        "formula": "BSBGSSB ~ support_within + support_mean + school fixed effects",
+        "weight": "TOTWGT",
+        "school_fixed_effects": true,
+        "n": 4786,
+        "classes": 353,
+        "schools": 154,
+        "schools_multiple_classes": 148,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.8332516121083702,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "support_within": {
+            "estimate": 1.2630010644076985,
+            "se": 0.047525445685535926,
+            "ci95_low": 1.1698529025148336,
+            "ci95_high": 1.3561492263005634,
+            "p_two_sided": 1.3116562943239827e-155
+          },
+          "support_mean": {
+            "estimate": 0.787554305434058,
+            "se": 0.18879738970382928,
+            "ci95_low": 0.41751822123937943,
+            "ci95_high": 1.1575903896287367,
+            "p_two_sided": 3.026996050741047e-05
+          }
+        },
+        "contextual_associations": {
+          "support": {
+            "estimate": -0.4754467589736405,
+            "se": 0.19501279726130638,
+            "ci95_low": -0.8576648181302123,
+            "ci95_high": -0.09322869981706872,
+            "p_two_sided": 0.014767609374956185
+          }
+        },
+        "model_columns": [
+          "support_within",
+          "support_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.0022586679876088252,
+            -6.343437454548679e-05
+          ],
+          [
+            -6.343437454548679e-05,
+            0.03564445435897958
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 4801,
+          "groups": 353,
+          "arithmetic_mean_n": 13.60056657223796,
+          "effective_n0": 13.59363934596959,
+          "reporters_min": 2,
+          "reporters_max": 38,
+          "icc1_anova": 0.26968660147702517,
+          "icc2_at_arithmetic_mean_n": 0.8339519034172719,
+          "icc2_at_effective_n0": 0.8338813428946525,
+          "icc2_min_reporters": 0.42480813952561053,
+          "icc2_max_reporters": 0.9334772721442055,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "disorder_BSBGSSB",
+        "formula": "BSBGSSB ~ disorder_within + disorder_mean + school fixed effects",
+        "weight": "TOTWGT",
+        "school_fixed_effects": true,
+        "n": 4787,
+        "classes": 353,
+        "schools": 154,
+        "schools_multiple_classes": 148,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.8330715651866973,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "disorder_within": {
+            "estimate": -0.3522707684696924,
+            "se": 0.04723097184483795,
+            "ci95_low": -0.4448417722404001,
+            "ci95_high": -0.2596997646989847,
+            "p_two_sided": 8.753319853879735e-14
+          },
+          "disorder_mean": {
+            "estimate": -0.48263226829126854,
+            "se": 0.12498811863033886,
+            "ci95_low": -0.7276044793021524,
+            "ci95_high": -0.2376600572803846,
+            "p_two_sided": 0.00011272753520923492
+          }
+        },
+        "contextual_associations": {
+          "disorder": {
+            "estimate": -0.13036149982157613,
+            "se": 0.13732002316192946,
+            "ci95_low": -0.3995037995751639,
+            "ci95_high": 0.13878079993201164,
+            "p_two_sided": 0.3424547171829646
+          }
+        },
+        "model_columns": [
+          "disorder_within",
+          "disorder_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.0022307647014078755,
+            -0.0005019971305166553
+          ],
+          [
+            -0.0005019971305166553,
+            0.015622029798751661
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 4802,
+          "groups": 353,
+          "arithmetic_mean_n": 13.603399433427763,
+          "effective_n0": 13.596497434780963,
+          "reporters_min": 2,
+          "reporters_max": 38,
+          "icc1_anova": 0.31660743621511517,
+          "icc2_at_arithmetic_mean_n": 0.863056638294311,
+          "icc2_at_effective_n0": 0.8629966456621115,
+          "icc2_min_reporters": 0.480944323275698,
+          "icc2_max_reporters": 0.9462508238631805,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "support_BSBGSB",
+        "formula": "BSBGSB ~ support_within + support_mean + school fixed effects",
+        "weight": "TOTWGT",
+        "school_fixed_effects": true,
+        "n": 4788,
+        "classes": 353,
+        "schools": 154,
+        "schools_multiple_classes": 148,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.8514730181801513,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "support_within": {
+            "estimate": 0.5577017037647041,
+            "se": 0.044263340924246296,
+            "ci95_low": 0.47094714971776347,
+            "ci95_high": 0.6444562578116446,
+            "p_two_sided": 2.121381819008793e-36
+          },
+          "support_mean": {
+            "estimate": 0.29397982135913997,
+            "se": 0.14991571237581022,
+            "ci95_low": 0.00015042438588624973,
+            "ci95_high": 0.5878092183323937,
+            "p_two_sided": 0.04988282851772969
+          }
+        },
+        "contextual_associations": {
+          "support": {
+            "estimate": -0.2637218824055641,
+            "se": 0.15726047618807604,
+            "ci95_low": -0.5719467519258119,
+            "ci95_high": 0.0445029871146837,
+            "p_two_sided": 0.09354737639992818
+          }
+        },
+        "model_columns": [
+          "support_within",
+          "support_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.001959243349776057,
+            -0.00014844660198885822
+          ],
+          [
+            -0.00014844660198885822,
+            0.022474720817146656
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 4801,
+          "groups": 353,
+          "arithmetic_mean_n": 13.60056657223796,
+          "effective_n0": 13.59363934596959,
+          "reporters_min": 2,
+          "reporters_max": 38,
+          "icc1_anova": 0.26968660147702517,
+          "icc2_at_arithmetic_mean_n": 0.8339519034172719,
+          "icc2_at_effective_n0": 0.8338813428946525,
+          "icc2_min_reporters": 0.42480813952561053,
+          "icc2_max_reporters": 0.9334772721442055,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "disorder_BSBGSB",
+        "formula": "BSBGSB ~ disorder_within + disorder_mean + school fixed effects",
+        "weight": "TOTWGT",
+        "school_fixed_effects": true,
+        "n": 4789,
+        "classes": 353,
+        "schools": 154,
+        "schools_multiple_classes": 148,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.8525202791569928,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "disorder_within": {
+            "estimate": -0.7166847016705771,
+            "se": 0.04982446074802804,
+            "ci95_low": -0.8143388502858416,
+            "ci95_high": -0.6190305530553125,
+            "p_two_sided": 6.503143537729861e-47
+          },
+          "disorder_mean": {
+            "estimate": -0.4447554109706773,
+            "se": 0.10407298687036168,
+            "ci95_low": -0.6487347170000961,
+            "ci95_high": -0.24077610494125848,
+            "p_two_sided": 1.9243241963836105e-05
+          }
+        },
+        "contextual_associations": {
+          "disorder": {
+            "estimate": 0.2719292906998998,
+            "se": 0.11701523061552233,
+            "ci95_low": 0.04258365305082734,
+            "ci95_high": 0.5012749283489722,
+            "p_two_sided": 0.020131955524890884
+          }
+        },
+        "model_columns": [
+          "disorder_within",
+          "disorder_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.002482476888831787,
+            -0.0001894503555268054
+          ],
+          [
+            -0.0001894503555268054,
+            0.010831186596118475
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 4802,
+          "groups": 353,
+          "arithmetic_mean_n": 13.603399433427763,
+          "effective_n0": 13.596497434780963,
+          "reporters_min": 2,
+          "reporters_max": 38,
+          "icc1_anova": 0.31660743621511517,
+          "icc2_at_arithmetic_mean_n": 0.863056638294311,
+          "icc2_at_effective_n0": 0.8629966456621115,
+          "icc2_min_reporters": 0.480944323275698,
+          "icc2_max_reporters": 0.9462508238631805,
+          "unweighted_descriptive": true
+        }
+      }
+    ],
+    "reliability": {
+      "support_alpha": {
+        "n": 4661,
+        "k": 7,
+        "alpha": 0.9199005318069177
+      },
+      "disorder_alpha": {
+        "n": 4750,
+        "k": 6,
+        "alpha": 0.9143898787387013
+      },
+      "support_agreement": {
+        "n": 4816,
+        "groups": 368,
+        "arithmetic_mean_n": 13.08695652173913,
+        "effective_n0": 13.079040573202857,
+        "reporters_min": 1,
+        "reporters_max": 38,
+        "icc1_anova": 0.2704200269704724,
+        "icc2_at_arithmetic_mean_n": 0.8290803434727403,
+        "icc2_at_effective_n0": 0.8289945862355932,
+        "icc2_min_reporters": 0.2704200269704724,
+        "icc2_max_reporters": 0.9337079410118734,
+        "unweighted_descriptive": true
+      },
+      "disorder_agreement": {
+        "n": 4817,
+        "groups": 368,
+        "arithmetic_mean_n": 13.089673913043478,
+        "effective_n0": 13.081781768588655,
+        "reporters_min": 1,
+        "reporters_max": 38,
+        "icc1_anova": 0.3175388421320724,
+        "icc2_at_arithmetic_mean_n": 0.858964771433347,
+        "icc2_at_effective_n0": 0.8588916921744388,
+        "icc2_min_reporters": 0.3175388421320724,
+        "icc2_max_reporters": 0.9464691723425575,
+        "unweighted_descriptive": true
+      }
+    },
+    "scoring": "support=5 minus BSBM17 mean (higher support); disorder=5 minus BSBM18 mean (higher disruption); at least half valid 1–4; BSBGSSB=higher belonging, BSBGSB=higher freedom from bullying provider scales"
+  },
+  "ZAF": {
+    "source": "provider_inputs/bsgzafm7.sav",
+    "source_sample": {
+      "n": 20829,
+      "classes": 521,
+      "schools": 519,
+      "schools_multiple_classes": 2
+    },
+    "models": [
+      {
+        "label": "support_BSBGSSB",
+        "formula": "BSBGSSB ~ support_within + support_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 20365,
+        "classes": 521,
+        "schools": 519,
+        "schools_multiple_classes": 2,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.8263271509659929,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "support_within": {
+            "estimate": 1.1754030466158774,
+            "se": 0.02812098498918811,
+            "ci95_low": 1.1202869288272772,
+            "ci95_high": 1.2305191644044775,
+            "p_two_sided": 0.0
+          },
+          "support_mean": {
+            "estimate": 0.9399048246592362,
+            "se": 0.13162375556813338,
+            "ci95_low": 0.6819270042357914,
+            "ci95_high": 1.197882645082681,
+            "p_two_sided": 9.27589660803625e-13
+          }
+        },
+        "contextual_associations": {
+          "support": {
+            "estimate": -0.23549822195664116,
+            "se": 0.13355058790366728,
+            "ci95_low": -0.4972525643619796,
+            "ci95_high": 0.026256120448697295,
+            "p_two_sided": 0.07783921454668867
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "support_within",
+          "support_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.19600933838886334,
+            -0.00047925003048099356,
+            -0.05818445164926105
+          ],
+          [
+            -0.00047925003048099356,
+            0.0007907897967621431,
+            0.0001399216486033542
+          ],
+          [
+            -0.05818445164926105,
+            0.0001399216486033542,
+            0.017324813029859727
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 20482,
+          "groups": 521,
+          "arithmetic_mean_n": 39.312859884836854,
+          "effective_n0": 39.30536493581606,
+          "reporters_min": 6,
+          "reporters_max": 89,
+          "icc1_anova": 0.19237448695555895,
+          "icc2_at_arithmetic_mean_n": 0.9035143009241944,
+          "icc2_at_effective_n0": 0.9034976780224092,
+          "icc2_min_reporters": 0.5883394359756555,
+          "icc2_max_reporters": 0.9549541219938801,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "disorder_BSBGSSB",
+        "formula": "BSBGSSB ~ disorder_within + disorder_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 20332,
+        "classes": 521,
+        "schools": 519,
+        "schools_multiple_classes": 2,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.8272277565112665,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "disorder_within": {
+            "estimate": -0.13856481820418076,
+            "se": 0.02312185501365927,
+            "ci95_low": -0.1838828212867098,
+            "ci95_high": -0.09324681512165171,
+            "p_two_sided": 2.0624937723592076e-09
+          },
+          "disorder_mean": {
+            "estimate": 0.12168918003555615,
+            "se": 0.09018965798368085,
+            "ci95_low": -0.055079301390443675,
+            "ci95_high": 0.29845766146155595,
+            "p_two_sided": 0.17725388850610269
+          }
+        },
+        "contextual_associations": {
+          "disorder": {
+            "estimate": 0.26025399823973694,
+            "se": 0.08808221262289265,
+            "ci95_low": 0.08761603382026803,
+            "ci95_high": 0.4328919626592058,
+            "p_two_sided": 0.003130021910859781
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "disorder_within",
+          "disorder_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.05968038563038488,
+            -0.0011559118477000544,
+            -0.021916231405505818
+          ],
+          [
+            -0.0011559118477000544,
+            0.0005346201792726802,
+            0.0004551592029707691
+          ],
+          [
+            -0.021916231405505818,
+            0.0004551592029707691,
+            0.008134174407213327
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 20450,
+          "groups": 521,
+          "arithmetic_mean_n": 39.25143953934741,
+          "effective_n0": 39.24395185254843,
+          "reporters_min": 6,
+          "reporters_max": 89,
+          "icc1_anova": 0.22787491542211988,
+          "icc2_at_arithmetic_mean_n": 0.920535005002522,
+          "icc2_at_effective_n0": 0.9205210482454416,
+          "icc2_min_reporters": 0.63908840796795,
+          "icc2_max_reporters": 0.9633246873344959,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "support_BSBGSB",
+        "formula": "BSBGSB ~ support_within + support_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 20427,
+        "classes": 521,
+        "schools": 519,
+        "schools_multiple_classes": 2,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.550678265722989,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "support_within": {
+            "estimate": 0.26044093549275216,
+            "se": 0.025179988286633738,
+            "ci95_low": 0.21108906531980962,
+            "ci95_high": 0.3097928056656947,
+            "p_two_sided": 4.494135620725029e-25
+          },
+          "support_mean": {
+            "estimate": -0.014723597903866003,
+            "se": 0.11021029568340589,
+            "ci95_low": -0.23073180816885175,
+            "ci95_high": 0.20128461236111972,
+            "p_two_sided": 0.8937224546317553
+          }
+        },
+        "contextual_associations": {
+          "support": {
+            "estimate": -0.27516453339661817,
+            "se": 0.1154831626891076,
+            "ci95_low": -0.5015073730880488,
+            "ci95_high": -0.04882169370518752,
+            "p_two_sided": 0.017185061125712407
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "support_within",
+          "support_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.1438375080121089,
+            0.0010841207208025386,
+            -0.04173404146575571
+          ],
+          [
+            0.0010841207208025386,
+            0.0006340318101150123,
+            -0.0002780098899700645
+          ],
+          [
+            -0.04173404146575571,
+            -0.0002780098899700645,
+            0.012146309274623754
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 20482,
+          "groups": 521,
+          "arithmetic_mean_n": 39.312859884836854,
+          "effective_n0": 39.30536493581606,
+          "reporters_min": 6,
+          "reporters_max": 89,
+          "icc1_anova": 0.19237448695555895,
+          "icc2_at_arithmetic_mean_n": 0.9035143009241944,
+          "icc2_at_effective_n0": 0.9034976780224092,
+          "icc2_min_reporters": 0.5883394359756555,
+          "icc2_max_reporters": 0.9549541219938801,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "disorder_BSBGSB",
+        "formula": "BSBGSB ~ disorder_within + disorder_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 20394,
+        "classes": 521,
+        "schools": 519,
+        "schools_multiple_classes": 2,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.5513043076083957,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "disorder_within": {
+            "estimate": -0.5172799479854104,
+            "se": 0.020125388762595165,
+            "ci95_low": -0.556724985134964,
+            "ci95_high": -0.4778349108358568,
+            "p_two_sided": 1.0860649300989208e-145
+          },
+          "disorder_mean": {
+            "estimate": -0.40551245891337023,
+            "se": 0.0749483785402153,
+            "ci95_low": -0.5524085815518669,
+            "ci95_high": -0.25861633627487357,
+            "p_two_sided": 6.282909194106323e-08
+          }
+        },
+        "contextual_associations": {
+          "disorder": {
+            "estimate": 0.1117674890720402,
+            "se": 0.07342931624294753,
+            "ci95_low": -0.03215132617353894,
+            "ci95_high": 0.25568630431761935,
+            "p_two_sided": 0.12798154625281416
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "disorder_within",
+          "disorder_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.03790649301642266,
+            -0.0008352320944023185,
+            -0.014512710486904007
+          ],
+          [
+            -0.0008352320944023185,
+            0.0004050312728455917,
+            0.00031521311737309915
+          ],
+          [
+            -0.014512710486904007,
+            0.00031521311737309915,
+            0.005617259445807404
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 20450,
+          "groups": 521,
+          "arithmetic_mean_n": 39.25143953934741,
+          "effective_n0": 39.24395185254843,
+          "reporters_min": 6,
+          "reporters_max": 89,
+          "icc1_anova": 0.22787491542211988,
+          "icc2_at_arithmetic_mean_n": 0.920535005002522,
+          "icc2_at_effective_n0": 0.9205210482454416,
+          "icc2_min_reporters": 0.63908840796795,
+          "icc2_max_reporters": 0.9633246873344959,
+          "unweighted_descriptive": true
+        }
+      }
+    ],
+    "reliability": {
+      "support_alpha": {
+        "n": 19650,
+        "k": 7,
+        "alpha": 0.838706426300646
+      },
+      "disorder_alpha": {
+        "n": 19691,
+        "k": 6,
+        "alpha": 0.8239500565389232
+      },
+      "support_agreement": {
+        "n": 20482,
+        "groups": 521,
+        "arithmetic_mean_n": 39.312859884836854,
+        "effective_n0": 39.30536493581606,
+        "reporters_min": 6,
+        "reporters_max": 89,
+        "icc1_anova": 0.19237448695555895,
+        "icc2_at_arithmetic_mean_n": 0.9035143009241944,
+        "icc2_at_effective_n0": 0.9034976780224092,
+        "icc2_min_reporters": 0.5883394359756555,
+        "icc2_max_reporters": 0.9549541219938801,
+        "unweighted_descriptive": true
+      },
+      "disorder_agreement": {
+        "n": 20450,
+        "groups": 521,
+        "arithmetic_mean_n": 39.25143953934741,
+        "effective_n0": 39.24395185254843,
+        "reporters_min": 6,
+        "reporters_max": 89,
+        "icc1_anova": 0.22787491542211988,
+        "icc2_at_arithmetic_mean_n": 0.920535005002522,
+        "icc2_at_effective_n0": 0.9205210482454416,
+        "icc2_min_reporters": 0.63908840796795,
+        "icc2_max_reporters": 0.9633246873344959,
+        "unweighted_descriptive": true
+      }
+    },
+    "scoring": "support=5 minus BSBM17 mean (higher support); disorder=5 minus BSBM18 mean (higher disruption); at least half valid 1–4; BSBGSSB=higher belonging, BSBGSB=higher freedom from bullying provider scales"
+  },
+  "KOR": {
+    "source": "provider_inputs/bsgkorm7.sav",
+    "source_sample": {
+      "n": 3861,
+      "classes": 168,
+      "schools": 168,
+      "schools_multiple_classes": 0
+    },
+    "models": [
+      {
+        "label": "support_BSBGSSB",
+        "formula": "BSBGSSB ~ support_within + support_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 3847,
+        "classes": 168,
+        "schools": 168,
+        "schools_multiple_classes": 0,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.729305855609378,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "support_within": {
+            "estimate": 1.0683691523077827,
+            "se": 0.06078797427755502,
+            "ci95_low": 0.9492269120306277,
+            "ci95_high": 1.1875113925849379,
+            "p_two_sided": 3.80619909034717e-69
+          },
+          "support_mean": {
+            "estimate": 1.0076624729737482,
+            "se": 0.15272635790872086,
+            "ci95_low": 0.7083243119826813,
+            "ci95_high": 1.3070006339648153,
+            "p_two_sided": 4.172206162567147e-11
+          }
+        },
+        "contextual_associations": {
+          "support": {
+            "estimate": -0.06070667933403451,
+            "se": 0.15421813884010108,
+            "ci95_low": -0.3629686772234303,
+            "ci95_high": 0.24155531855536128,
+            "p_two_sided": 0.693845642364799
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "support_within",
+          "support_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.20015363300204486,
+            -0.004480843677853137,
+            -0.0680461504673208
+          ],
+          [
+            -0.004480843677853137,
+            0.0036951778167686913,
+            0.0016186419347633467
+          ],
+          [
+            -0.0680461504673208,
+            0.0016186419347633467,
+            0.023325340400062698
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 3852,
+          "groups": 168,
+          "arithmetic_mean_n": 22.928571428571427,
+          "effective_n0": 22.924817032601464,
+          "reporters_min": 5,
+          "reporters_max": 31,
+          "icc1_anova": 0.16457393263160813,
+          "icc2_at_arithmetic_mean_n": 0.8187352120703999,
+          "icc2_at_effective_n0": 0.818710908044415,
+          "icc2_min_reporters": 0.4962140636379842,
+          "icc2_max_reporters": 0.859289978853634,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "disorder_BSBGSSB",
+        "formula": "BSBGSSB ~ disorder_within + disorder_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 3848,
+        "classes": 168,
+        "schools": 168,
+        "schools_multiple_classes": 0,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.7290930575864882,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "disorder_within": {
+            "estimate": -0.3037121027986704,
+            "se": 0.05032274195835649,
+            "ci95_low": -0.40234286464035174,
+            "ci95_high": -0.20508134095698904,
+            "p_two_sided": 1.5868211895586605e-09
+          },
+          "disorder_mean": {
+            "estimate": -0.24975918285570914,
+            "se": 0.11859719244903758,
+            "ci95_low": -0.48220540872338846,
+            "ci95_high": -0.017312956988029843,
+            "p_two_sided": 0.035209116675472794
+          }
+        },
+        "contextual_associations": {
+          "disorder": {
+            "estimate": 0.05395291994296125,
+            "se": 0.1298163099803458,
+            "ci95_low": -0.20048237222440407,
+            "ci95_high": 0.3083882121103266,
+            "p_two_sided": 0.677695614614517
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "disorder_within",
+          "disorder_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.06878833128480771,
+            -0.0003606300180178631,
+            -0.03068486162163247
+          ],
+          [
+            -0.0003606300180178631,
+            0.0025323783582073323,
+            -0.0001273009609559209
+          ],
+          [
+            -0.03068486162163247,
+            -0.0001273009609559209,
+            0.014065294056794056
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 3853,
+          "groups": 168,
+          "arithmetic_mean_n": 22.93452380952381,
+          "effective_n0": 22.930765512836253,
+          "reporters_min": 5,
+          "reporters_max": 31,
+          "icc1_anova": 0.2525621983066701,
+          "icc2_at_arithmetic_mean_n": 0.8857099306405883,
+          "icc2_at_effective_n0": 0.8856933399530862,
+          "icc2_min_reporters": 0.6281864194065221,
+          "icc2_max_reporters": 0.9128542050067789,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "support_BSBGSB",
+        "formula": "BSBGSB ~ support_within + support_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 3852,
+        "classes": 168,
+        "schools": 168,
+        "schools_multiple_classes": 0,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.7545653853732124,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "support_within": {
+            "estimate": 0.24721842742063813,
+            "se": 0.06280204312797673,
+            "ci95_low": 0.12412868473427253,
+            "ci95_high": 0.37030817010700373,
+            "p_two_sided": 8.268857507353043e-05
+          },
+          "support_mean": {
+            "estimate": 0.23093943196657837,
+            "se": 0.12760492316049443,
+            "ci95_low": -0.019161621677991708,
+            "ci95_high": 0.4810404856111484,
+            "p_two_sided": 0.0703267568414979
+          }
+        },
+        "contextual_associations": {
+          "support": {
+            "estimate": -0.016278995454059753,
+            "se": 0.1383551991568036,
+            "ci95_low": -0.2874502028752613,
+            "ci95_high": 0.2548922119671418,
+            "p_two_sided": 0.9063363590927439
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "support_within",
+          "support_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.14063382743440322,
+            -0.0009643333353617614,
+            -0.047495952254696404
+          ],
+          [
+            -0.0009643333353617614,
+            0.003944096621048249,
+            0.0005424759510625762
+          ],
+          [
+            -0.047495952254696404,
+            0.0005424759510625762,
+            0.01628301641479569
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 3852,
+          "groups": 168,
+          "arithmetic_mean_n": 22.928571428571427,
+          "effective_n0": 22.924817032601464,
+          "reporters_min": 5,
+          "reporters_max": 31,
+          "icc1_anova": 0.16457393263160813,
+          "icc2_at_arithmetic_mean_n": 0.8187352120703999,
+          "icc2_at_effective_n0": 0.818710908044415,
+          "icc2_min_reporters": 0.4962140636379842,
+          "icc2_max_reporters": 0.859289978853634,
+          "unweighted_descriptive": true
+        }
+      },
+      {
+        "label": "disorder_BSBGSB",
+        "formula": "BSBGSB ~ disorder_within + disorder_mean",
+        "weight": "TOTWGT",
+        "school_fixed_effects": false,
+        "n": 3853,
+        "classes": 168,
+        "schools": 168,
+        "schools_multiple_classes": 0,
+        "replicates": 150,
+        "variance_factor": 0.5,
+        "outcome_sd_in_model_sample": 1.754598928034225,
+        "uncertainty": "design based jackknife, normal 95% intervals",
+        "terms": {
+          "disorder_within": {
+            "estimate": -0.5522835423517842,
+            "se": 0.049933002120816375,
+            "ci95_low": -0.6501504281485464,
+            "ci95_high": -0.454416656555022,
+            "p_two_sided": 1.9502601669109818e-28
+          },
+          "disorder_mean": {
+            "estimate": -0.4411983072236412,
+            "se": 0.08825866478093149,
+            "ci95_low": -0.6141821115178606,
+            "ci95_high": -0.2682145029294217,
+            "p_two_sided": 5.76512891137544e-07
+          }
+        },
+        "contextual_associations": {
+          "disorder": {
+            "estimate": 0.11108523512814306,
+            "se": 0.09587284524376918,
+            "ci95_low": -0.07682208864502676,
+            "ci95_high": 0.2989925589013129,
+            "p_two_sided": 0.24658967946699495
+          }
+        },
+        "model_columns": [
+          "Intercept",
+          "disorder_within",
+          "disorder_mean"
+        ],
+        "coefficient_covariance": [
+          [
+            0.036783833370760424,
+            -0.0016379952309732847,
+            -0.016506643456290142
+          ],
+          [
+            -0.0016379952309732847,
+            0.0024933047007974526,
+            0.0005456470772872857
+          ],
+          [
+            -0.016506643456290142,
+            0.0005456470772872857,
+            0.007789591908912835
+          ]
+        ],
+        "agreement_valid_reporters_in_modeled_classes": {
+          "n": 3853,
+          "groups": 168,
+          "arithmetic_mean_n": 22.93452380952381,
+          "effective_n0": 22.930765512836253,
+          "reporters_min": 5,
+          "reporters_max": 31,
+          "icc1_anova": 0.2525621983066701,
+          "icc2_at_arithmetic_mean_n": 0.8857099306405883,
+          "icc2_at_effective_n0": 0.8856933399530862,
+          "icc2_min_reporters": 0.6281864194065221,
+          "icc2_max_reporters": 0.9128542050067789,
+          "unweighted_descriptive": true
+        }
+      }
+    ],
+    "reliability": {
+      "support_alpha": {
+        "n": 3833,
+        "k": 7,
+        "alpha": 0.9060215306280516
+      },
+      "disorder_alpha": {
+        "n": 3838,
+        "k": 6,
+        "alpha": 0.8932954738480455
+      },
+      "support_agreement": {
+        "n": 3852,
+        "groups": 168,
+        "arithmetic_mean_n": 22.928571428571427,
+        "effective_n0": 22.924817032601464,
+        "reporters_min": 5,
+        "reporters_max": 31,
+        "icc1_anova": 0.16457393263160813,
+        "icc2_at_arithmetic_mean_n": 0.8187352120703999,
+        "icc2_at_effective_n0": 0.818710908044415,
+        "icc2_min_reporters": 0.4962140636379842,
+        "icc2_max_reporters": 0.859289978853634,
+        "unweighted_descriptive": true
+      },
+      "disorder_agreement": {
+        "n": 3853,
+        "groups": 168,
+        "arithmetic_mean_n": 22.93452380952381,
+        "effective_n0": 22.930765512836253,
+        "reporters_min": 5,
+        "reporters_max": 31,
+        "icc1_anova": 0.2525621983066701,
+        "icc2_at_arithmetic_mean_n": 0.8857099306405883,
+        "icc2_at_effective_n0": 0.8856933399530862,
+        "icc2_min_reporters": 0.6281864194065221,
+        "icc2_max_reporters": 0.9128542050067789,
+        "unweighted_descriptive": true
+      }
+    },
+    "scoring": "support=5 minus BSBM17 mean (higher support); disorder=5 minus BSBM18 mean (higher disruption); at least half valid 1–4; BSBGSSB=higher belonging, BSBGSB=higher freedom from bullying provider scales"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "status": "Historical submitted-analysis provenance only; not a preregistration or current inferential result",
+  "source": "provider_inputs/CEPS_baseline_pooled.dta",
+  "analysis_notes": {
+    "design": "Associational weighted WLS with school fixed effects and class clustered standard errors",
+    "interaction_hypothesis": "The class contextual association is more protective when own perceived class support is lower; a positive interaction is expected if the protective slope attenuates as own support rises.",
+    "mismatch_interaction_role": "Referent mismatch comparator estimated in the same model family; not a causal negative control.",
+    "analysis_block_frozen_before_execution": true
+  },
+  "sample": {
+    "n": 8827,
+    "classes": 438,
+    "schools": 112
+  },
+  "models": [
+    {
+      "label": "class_referent_own_perception_interaction",
+      "formula": "z_distress_score ~ z_class_score * z_class_loo_mean + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+      "n": 8827,
+      "classes": 438,
+      "schools": 112,
+      "r_squared": 0.21158964146345727,
+      "terms": {
+        "z_class_score": {
+          "estimate": -0.20565303902665463,
+          "se": 0.014630625903638615,
+          "p_value": 7.043682422456982e-45,
+          "ci95_low": -0.2343285388690651,
+          "ci95_high": -0.17697753918424416
+        },
+        "z_class_loo_mean": {
+          "estimate": -0.0378923706140841,
+          "se": 0.020260185576881192,
+          "p_value": 0.061443912779670866,
+          "ci95_low": -0.0776016046648691,
+          "ci95_high": 0.0018168634367008996
+        },
+        "z_class_score:z_class_loo_mean": {
+          "estimate": -0.02895144657355191,
+          "se": 0.014988934688260791,
+          "p_value": 0.05341861817093359,
+          "ci95_low": -0.05832921872916616,
+          "ci95_high": 0.00042632558206234447
+        }
+      }
+    },
+    {
+      "label": "referent_mismatch_own_perception_interaction",
+      "formula": "z_distress_score ~ z_school_score * z_class_school_loo_mean + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+      "n": 8827,
+      "classes": 438,
+      "schools": 112,
+      "r_squared": 0.21156844538246056,
+      "terms": {
+        "z_school_score": {
+          "estimate": -0.19667875274050636,
+          "se": 0.013970145554295696,
+          "p_value": 5.1488088594514946e-45,
+          "ci95_low": -0.22405973488570827,
+          "ci95_high": -0.16929777059530446
+        },
+        "z_class_school_loo_mean": {
+          "estimate": -0.06096142598653289,
+          "se": 0.021257608149474434,
+          "p_value": 0.004134069555099356,
+          "ci95_low": -0.10262557235696793,
+          "ci95_high": -0.019297279616097854
+        },
+        "z_school_score:z_class_school_loo_mean": {
+          "estimate": -0.025387763923414935,
+          "se": 0.013286381981654926,
+          "p_value": 0.056028882467853786,
+          "ci95_low": -0.0514285940923005,
+          "ci95_high": 0.0006530662454706307
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "label": "individual_class_perception_minus_class_context",
+      "formula": "z_distress_score ~ z_class_score + z_class_loo_mean + z_school_score + z_class_school_loo_mean + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+      "restriction": "z_class_score - z_class_loo_mean = 0",
+      "n": 8827,
+      "classes": 438,
+      "schools": 112,
+      "estimate": -0.12553505035060084,
+      "se": 0.034835557818119194,
+      "p_value": 0.0003137832554172028,
+      "ci95_low": -0.19381148905547718,
+      "ci95_high": -0.0572586116457245
+    },
+    {
+      "label": "class_context_minus_referent_mismatch",
+      "formula": "z_distress_score ~ z_class_score + z_class_loo_mean + z_school_score + z_class_school_loo_mean + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+      "restriction": "z_class_loo_mean - z_class_school_loo_mean = 0",
+      "n": 8827,
+      "classes": 438,
+      "schools": 112,
+      "estimate": 0.026672121440650603,
+      "se": 0.057708359807986116,
+      "p_value": 0.6439463831906562,
+      "ci95_low": -0.08643418538988097,
+      "ci95_high": 0.13977842827118217
+    }
+  ],
+  "original_status_label": "Prespecified CEPS redesign tests",
+  "public_historical_notice": "Retained solely to reproduce withdrawn-number provenance. Historical labels such as prespecified or frozen indicate an internal execution history, not public preregistration. The current revision is exploratory and supersedes historical construct-validity interpretations.",
+  "historical_error_notice": "The submitted CEPS gender1/2 filter excluded male0 records; history used females only. The corrected current analysis uses0male/1female and the provider-hash-matching intact derivative."
+}

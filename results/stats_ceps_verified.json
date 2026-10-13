@@ -1,0 +1,1224 @@
+{
+  "sample": {
+    "n": 17991,
+    "classes": 438,
+    "schools": 112,
+    "schools_multiple_classes": 111
+  },
+  "sample_flow": {
+    "input_records": 58461,
+    "positive_ID_records": 58461,
+    "valid_ID_school_class_grade_records_before_deduplication": 58461,
+    "source_valid_identifier_records_after_deduplication": 19487,
+    "conflicting_eligible_duplicate_IDs": 0,
+    "valid_class_score_reporters": 19172,
+    "complete_case_records": 17991,
+    "missing_by_required_variable_overlapping": {
+      "distress_score": 693,
+      "sweight": 0,
+      "class_score": 315,
+      "class_loo": 315,
+      "school_score": 367,
+      "class_school_loo": 367,
+      "health": 162,
+      "expectstress_p": 122,
+      "income5": 59,
+      "medu": 46,
+      "fedu": 46,
+      "gender": 0,
+      "grade9": 0,
+      "migrant_status": 121
+    }
+  },
+  "source_cleaning": {
+    "gender_valid_codes": {
+      "0": "male",
+      "1": "female"
+    },
+    "duplicate_rule": "Filter valid ID/school/class/grade rows before deduplication; assert no model-field conflict within eligible IDs.",
+    "education_valid_codes": "1–9 ordered categories, not years",
+    "migrant_valid_codes": [
+      1,
+      2,
+      3
+    ],
+    "historical_gender_error": "Original 1/2 filter excluded all male0 respondents; corrected before current analysis."
+  },
+  "participant_description": {
+    "gender_counts": {
+      "male": 9164,
+      "female": 8827
+    },
+    "grade_counts": {
+      "grade7": 9332,
+      "grade9": 8659
+    },
+    "age_years": {
+      "valid_n": 17598,
+      "mean": 14.063445091247559,
+      "sd": 1.2161853313446045,
+      "minimum": 11.0,
+      "maximum": 18.16666603088379
+    },
+    "core_scores": {
+      "class_score": {
+        "valid_n": 17991,
+        "mean": 3.205880718136846,
+        "sd": 0.7150575304259444,
+        "minimum": 1.0,
+        "maximum": 4.0
+      },
+      "school_score": {
+        "valid_n": 17991,
+        "mean": 2.941470735367684,
+        "sd": 0.9206834799648989,
+        "minimum": 1.0,
+        "maximum": 4.0
+      },
+      "distress_score": {
+        "valid_n": 17991,
+        "mean": 2.0876771719192933,
+        "sd": 0.8218492830012557,
+        "minimum": 1.0,
+        "maximum": 5.0
+      }
+    },
+    "control_coding": {
+      "categorical": [
+        "gender0male1female",
+        "grade9:0grade7/1grade9",
+        "migrant_status1–3"
+      ],
+      "linear": [
+        "health1poor–5good",
+        "expectstress_p1none–5high",
+        "income5:1poor–5rich",
+        "medu1–9 education categories",
+        "fedu1–9 education categories"
+      ]
+    }
+  },
+  "outcome": "mean of five negative affect items, 1–5; larger=more negative affect",
+  "predictor": "mean classmategood/classgood 1–4; larger=more favorable class rating; secondary friendly school-belonging 1–4",
+  "outcome_sd_reference": 0.8218264421168245,
+  "class_size_cutpoints": {
+    "q25": 39.0,
+    "q75": 54.0
+  },
+  "reliability": {
+    "class_alpha": {
+      "n": 17991,
+      "k": 2,
+      "alpha": 0.6346803122278983
+    },
+    "outcome_alpha": {
+      "n": 17991,
+      "k": 5,
+      "alpha": 0.8590787611837064
+    },
+    "all_context_reporters_in_modeled_classes": {
+      "n": 19172,
+      "groups": 438,
+      "arithmetic_mean_n": 43.77168949771689,
+      "effective_n0": 43.76281963446884,
+      "reporters_min": 9,
+      "reporters_max": 87,
+      "icc1_anova": 0.11504913637743099,
+      "icc2_at_arithmetic_mean_n": 0.8505364144124035,
+      "icc2_at_effective_n0": 0.8505106496120858,
+      "icc2_min_reporters": 0.5391824373036098,
+      "icc2_max_reporters": 0.918768815179696,
+      "unweighted_descriptive": true
+    },
+    "final_model_complete_cases": {
+      "n": 17991,
+      "groups": 438,
+      "arithmetic_mean_n": 41.07534246575342,
+      "effective_n0": 41.066705231588585,
+      "reporters_min": 9,
+      "reporters_max": 79,
+      "icc1_anova": 0.11813474077657732,
+      "icc2_at_arithmetic_mean_n": 0.84621195833644,
+      "icc2_at_effective_n0": 0.8461845884805359,
+      "icc2_min_reporters": 0.546617003185802,
+      "icc2_max_reporters": 0.9136654349383814,
+      "unweighted_descriptive": true
+    },
+    "outcome_complete_cases": {
+      "n": 17991,
+      "groups": 438,
+      "arithmetic_mean_n": 41.07534246575342,
+      "effective_n0": 41.066705231588585,
+      "reporters_min": 9,
+      "reporters_max": 79,
+      "icc1_anova": 0.06528999181872955,
+      "icc2_at_arithmetic_mean_n": 0.7415442682323761,
+      "icc2_at_effective_n0": 0.7415039608610564,
+      "icc2_min_reporters": 0.38599634218304274,
+      "icc2_max_reporters": 0.8465832259220972,
+      "unweighted_descriptive": true
+    }
+  },
+  "reporter_pool": {
+    "n": 19172,
+    "classes": 438,
+    "schools": 112,
+    "schools_multiple_classes": 111
+  },
+  "models": [
+    {
+      "label": "primary_joint",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 17991,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218264421168245,
+      "r_squared": 0.175867991160521,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_within": {
+          "estimate": -0.12004291090505297,
+          "se": 0.012497087953203905,
+          "ci95_low": -0.14480672495336303,
+          "ci95_high": -0.09527909685674289,
+          "p_two_sided": 2.902597463269211e-16
+        },
+        "class_mean": {
+          "estimate": -0.09612284938807023,
+          "se": 0.09465600031234908,
+          "ci95_low": -0.2836900329646926,
+          "ci95_high": 0.09144433418855213,
+          "p_two_sided": 0.31207754000882143
+        },
+        "class_school_within": {
+          "estimate": -0.09384159220515767,
+          "se": 0.009599157206534538,
+          "ci95_low": -0.11286296302156248,
+          "ci95_high": -0.07482022138875286,
+          "p_two_sided": 1.1760704042316534e-16
+        },
+        "class_school_mean": {
+          "estimate": -0.18347002049528782,
+          "se": 0.08334307140457685,
+          "ci95_low": -0.3486198802231171,
+          "ci95_high": -0.0183201607674586,
+          "p_two_sided": 0.029778383984001785
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.02392006151698274,
+          "se": 0.09219541421232337,
+          "ci95_low": -0.1587713064409081,
+          "ci95_high": 0.2066114294748736,
+          "p_two_sided": 0.7957689591108512
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.08962842829013015,
+          "se": 0.08557551950122665,
+          "ci95_low": -0.2592020329531758,
+          "ci95_high": 0.07994517637291546,
+          "p_two_sided": 0.2972085599196399
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.2752206118549467,
+        "q01": -1.3303415986173708,
+        "q25": -0.5217817953726316,
+        "median": -0.09057216350830943,
+        "q75": 0.39043106035381303,
+        "q99": 2.451554657882937,
+        "max": 3.6947789545162304
+      }
+    },
+    {
+      "label": "class_cluster_sensitivity",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "class_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 438,
+      "df": 437,
+      "n": 17991,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218264421168245,
+      "r_squared": 0.175867991160521,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_within": {
+          "estimate": -0.12004291090505297,
+          "se": 0.012800591337515252,
+          "ci95_low": -0.14520128699131205,
+          "ci95_high": -0.09488453481879389,
+          "p_two_sided": 3.671794537771738e-19
+        },
+        "class_mean": {
+          "estimate": -0.09612284938807023,
+          "se": 0.0828996392699971,
+          "ci95_low": -0.2590544083432711,
+          "ci95_high": 0.06680870956713061,
+          "p_two_sided": 0.2468820547800264
+        },
+        "class_school_within": {
+          "estimate": -0.09384159220515767,
+          "se": 0.009761420578208257,
+          "ci95_low": -0.11302675979370301,
+          "ci95_high": -0.07465642461661233,
+          "p_two_sided": 5.633491674778468e-20
+        },
+        "class_school_mean": {
+          "estimate": -0.18347002049528782,
+          "se": 0.07122495612931379,
+          "ci95_low": -0.32345607159098744,
+          "ci95_high": -0.04348396939958821,
+          "p_two_sided": 0.010324752939200172
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.02392006151698274,
+          "se": 0.08327867088094218,
+          "ci95_low": -0.13975644894594957,
+          "ci95_high": 0.18759657197991508,
+          "p_two_sided": 0.7740730177790401
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.08962842829013015,
+          "se": 0.07303131184714874,
+          "ci95_low": -0.23316470416034224,
+          "ci95_high": 0.053907847580081936,
+          "p_two_sided": 0.22038550007384058
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.2752206118549467,
+        "q01": -1.3303415986173708,
+        "q25": -0.5217817953726316,
+        "median": -0.09057216350830943,
+        "q75": 0.39043106035381303,
+        "q99": 2.451554657882937,
+        "max": 3.6947789545162304
+      }
+    },
+    {
+      "label": "unweighted",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "none",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 17991,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218264421168245,
+      "r_squared": 0.18260154533135375,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_within": {
+          "estimate": -0.11187918304188628,
+          "se": 0.011053773631246665,
+          "ci95_low": -0.13378297340979578,
+          "ci95_high": -0.08997539267397678,
+          "p_two_sided": 1.87948471819629e-17
+        },
+        "class_mean": {
+          "estimate": -0.06500501778330212,
+          "se": 0.07280896423973766,
+          "ci95_low": -0.20928084093782148,
+          "ci95_high": 0.07927080537121725,
+          "p_two_sided": 0.37388717582364467
+        },
+        "class_school_within": {
+          "estimate": -0.11232098352142067,
+          "se": 0.008410339094322672,
+          "ci95_low": -0.1289866318864579,
+          "ci95_high": -0.09565533515638344,
+          "p_two_sided": 7.70356206081741e-25
+        },
+        "class_school_mean": {
+          "estimate": -0.2750216401883206,
+          "se": 0.07056487610814709,
+          "ci95_low": -0.4148506529013337,
+          "ci95_high": -0.13519262747530744,
+          "p_two_sided": 0.00016671439463828127
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.04687416525858416,
+          "se": 0.0718012983439761,
+          "ci95_low": -0.095404900654656,
+          "ci95_high": 0.1891532311718243,
+          "p_two_sided": 0.515214603525265
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.16270065666689992,
+          "se": 0.07063729406466078,
+          "ci95_low": -0.30267317039515595,
+          "ci95_high": -0.02272814293864392,
+          "p_two_sided": 0.02312326001488822
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.374134481828242,
+        "q01": -1.3602408760529388,
+        "q25": -0.5135353266185314,
+        "median": -0.08428159084488973,
+        "q75": 0.3967096069389814,
+        "q99": 2.415975008513923,
+        "max": 3.7341157649913397
+      }
+    },
+    {
+      "label": "no_school_FE",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 17991,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218264421168245,
+      "r_squared": 0.1598547921280281,
+      "rank": 14,
+      "columns": 14,
+      "terms": {
+        "class_within": {
+          "estimate": -0.12024387945052069,
+          "se": 0.012419016215246314,
+          "ci95_low": -0.14485298913822692,
+          "ci95_high": -0.09563476976281444,
+          "p_two_sided": 1.934157137942809e-16
+        },
+        "class_mean": {
+          "estimate": -0.09945542220230112,
+          "se": 0.0731309015443999,
+          "ci95_low": -0.24436918561760146,
+          "ci95_high": 0.04545834121299923,
+          "p_two_sided": 0.17659701280872006
+        },
+        "class_school_within": {
+          "estimate": -0.0929205385828581,
+          "se": 0.009622084669345053,
+          "ci95_low": -0.1119873416973923,
+          "ci95_high": -0.07385373546832391,
+          "p_two_sided": 2.2110438565883156e-16
+        },
+        "class_school_mean": {
+          "estimate": -0.19216177482807476,
+          "se": 0.06611932527085447,
+          "ci95_low": -0.32318163178502235,
+          "ci95_high": -0.06114191787112713,
+          "p_two_sided": 0.004416270973267631
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.020788457248219566,
+          "se": 0.07096502500647439,
+          "ci95_low": -0.11983347721959914,
+          "ci95_high": 0.16141039171603827,
+          "p_two_sided": 0.7701153398579137
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.09924123624521665,
+          "se": 0.06706898622682314,
+          "ci95_low": -0.23214290978300378,
+          "ci95_high": 0.03366043729257047,
+          "p_two_sided": 0.1417888674375228
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.26945185901385,
+        "q01": -1.3357829674369917,
+        "q25": -0.5115508354461168,
+        "median": -0.07254488118019697,
+        "q75": 0.41331875149100017,
+        "q99": 2.513141253184649,
+        "max": 3.670494279378744
+      }
+    },
+    {
+      "label": "class_only",
+      "formula": "distress_score ~ class_within + class_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 17991,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218264421168245,
+      "r_squared": 0.16706223908967566,
+      "rank": 123,
+      "columns": 123,
+      "terms": {
+        "class_within": {
+          "estimate": -0.17961498435809226,
+          "se": 0.011942421898273933,
+          "ci95_low": -0.20327969059067522,
+          "ci95_high": -0.1559502781255093,
+          "p_two_sided": 1.515335309416812e-28
+        },
+        "class_mean": {
+          "estimate": -0.24261212200025,
+          "se": 0.06335877134184298,
+          "ci95_low": -0.3681617570603559,
+          "ci95_high": -0.11706248694014407,
+          "p_two_sided": 0.00021325102086452996
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": -0.06299713764215775,
+          "se": 0.060928661066649424,
+          "ci95_low": -0.183731346964914,
+          "ci95_high": 0.05773707168059851,
+          "p_two_sided": 0.3034073547316561
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.2573699636594875,
+        "q01": -1.3362951932307239,
+        "q25": -0.5262429121600668,
+        "median": -0.09150801846511936,
+        "q75": 0.3961325825954263,
+        "q99": 2.471861987675797,
+        "max": 3.6399166983688254
+      }
+    },
+    {
+      "label": "minimum_10_reporters",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 17982,
+      "classes": 437,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218200396133283,
+      "r_squared": 0.17591402079567553,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_within": {
+          "estimate": -0.11996237370817989,
+          "se": 0.01249944557340211,
+          "ci95_low": -0.14473085953830053,
+          "ci95_high": -0.09519388787805924,
+          "p_two_sided": 3.032410235139443e-16
+        },
+        "class_mean": {
+          "estimate": -0.0934766569848254,
+          "se": 0.09469553446727529,
+          "ci95_low": -0.28112218012861856,
+          "ci95_high": 0.09416886615896779,
+          "p_two_sided": 0.3257265366577535
+        },
+        "class_school_within": {
+          "estimate": -0.09386602495683535,
+          "se": 0.009601561968491643,
+          "ci95_low": -0.11289216096959304,
+          "ci95_high": -0.07483988894407767,
+          "p_two_sided": 1.1754701930342532e-16
+        },
+        "class_school_mean": {
+          "estimate": -0.18597384070420808,
+          "se": 0.0834588037372949,
+          "ci95_low": -0.3513530317752701,
+          "ci95_high": -0.020594649633146028,
+          "p_two_sided": 0.027873895466466108
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.026485716723354494,
+          "se": 0.09222939682828997,
+          "ci95_low": -0.15627299005665418,
+          "ci95_high": 0.2092444235033632,
+          "p_two_sided": 0.7745158912167578
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.09210781574737273,
+          "se": 0.08567549012735592,
+          "ci95_low": -0.26187951887984007,
+          "ci95_high": 0.07766388738509461,
+          "p_two_sided": 0.284671236612925
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.275076638334824,
+        "q01": -1.3296395343549448,
+        "q25": -0.5216533824326263,
+        "median": -0.09055055287069314,
+        "q75": 0.3903442935240306,
+        "q99": 2.45272343850979,
+        "max": 3.6944913135067
+      }
+    },
+    {
+      "label": "minimum_20_reporters",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 111,
+      "df": 110,
+      "n": 17835,
+      "classes": 427,
+      "schools": 111,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.819359358727067,
+      "r_squared": 0.17414127371741261,
+      "rank": 124,
+      "columns": 124,
+      "terms": {
+        "class_within": {
+          "estimate": -0.11876266731369887,
+          "se": 0.012615469380199085,
+          "ci95_low": -0.1437635665491814,
+          "ci95_high": -0.09376176807821633,
+          "p_two_sided": 8.622209486855614e-16
+        },
+        "class_mean": {
+          "estimate": -0.092119852577011,
+          "se": 0.09522587553416624,
+          "ci95_low": -0.2808351866712801,
+          "ci95_high": 0.09659548151725811,
+          "p_two_sided": 0.3354749511423658
+        },
+        "class_school_within": {
+          "estimate": -0.09299272649090443,
+          "se": 0.009533562411960359,
+          "ci95_low": -0.11188600949396962,
+          "ci95_high": -0.07409944348783923,
+          "p_two_sided": 1.4319408966550815e-16
+        },
+        "class_school_mean": {
+          "estimate": -0.18447045367359666,
+          "se": 0.08374918077043009,
+          "ci95_low": -0.3504416725314631,
+          "ci95_high": -0.018499234815730264,
+          "p_two_sided": 0.02970504872352674
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.026642814736687878,
+          "se": 0.09277458737975727,
+          "ci95_low": -0.1572146415966712,
+          "ci95_high": 0.21050027107004693,
+          "p_two_sided": 0.7745163533218605
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.09147772718269223,
+          "se": 0.0859827585174329,
+          "ci95_low": -0.26187537287451224,
+          "ci95_high": 0.07891991850912777,
+          "p_two_sided": 0.2897003977942019
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.2649109454420744,
+        "q01": -1.3293033814609512,
+        "q25": -0.5213289108662132,
+        "median": -0.09007215699036886,
+        "q75": 0.3894234617186302,
+        "q99": 2.4466463644914054,
+        "max": 3.687048807290221
+      }
+    },
+    {
+      "label": "minimum_30_reporters",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 106,
+      "df": 105,
+      "n": 16578,
+      "classes": 373,
+      "schools": 106,
+      "schools_multiple_classes": 103,
+      "outcome_sd_in_model_sample": 0.8157412196589456,
+      "r_squared": 0.17449031134142634,
+      "rank": 119,
+      "columns": 119,
+      "terms": {
+        "class_within": {
+          "estimate": -0.12369650391476396,
+          "se": 0.0128675399819133,
+          "ci95_low": -0.1492104587270701,
+          "ci95_high": -0.09818254910245781,
+          "p_two_sided": 4.529776982031554e-16
+        },
+        "class_mean": {
+          "estimate": -0.13423184225901927,
+          "se": 0.09922003821240155,
+          "ci95_low": -0.3309668494930973,
+          "ci95_high": 0.06250316497505878,
+          "p_two_sided": 0.17900300639055106
+        },
+        "class_school_within": {
+          "estimate": -0.08965513965760621,
+          "se": 0.009718509181613245,
+          "ci95_low": -0.10892514810142637,
+          "ci95_high": -0.07038513121378606,
+          "p_two_sided": 3.352194674710587e-15
+        },
+        "class_school_mean": {
+          "estimate": -0.14787639052886417,
+          "se": 0.08768302231062117,
+          "ci95_low": -0.32173562641887576,
+          "ci95_high": 0.025982845361147394,
+          "p_two_sided": 0.09467092105250358
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": -0.01053533834425531,
+          "se": 0.09718188085349815,
+          "ci95_low": -0.20322905603670194,
+          "ci95_high": 0.1821583793481913,
+          "p_two_sided": 0.913878582462985
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.05822125087125796,
+          "se": 0.09046904499817791,
+          "ci95_low": -0.23760465509929657,
+          "ci95_high": 0.12116215335678066,
+          "p_two_sided": 0.5212711366834173
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.2614511366896752,
+        "q01": -1.3213373556578598,
+        "q25": -0.5167640636595794,
+        "median": -0.09232905987632678,
+        "q75": 0.39048622847786796,
+        "q99": 2.4620442669839075,
+        "max": 3.6927837404926365
+      }
+    },
+    {
+      "label": "one_of_two_class_items",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 18107,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8212138997870848,
+      "r_squared": 0.17603044997444406,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_within": {
+          "estimate": -0.1222725362400877,
+          "se": 0.012427930855860704,
+          "ci95_low": -0.1468993108832867,
+          "ci95_high": -0.0976457615968887,
+          "p_two_sided": 8.440667827944294e-17
+        },
+        "class_mean": {
+          "estimate": -0.10311965951992265,
+          "se": 0.0956499442601873,
+          "ci95_low": -0.292656409381977,
+          "ci95_high": 0.08641709034213173,
+          "p_two_sided": 0.2833289806340066
+        },
+        "class_school_within": {
+          "estimate": -0.09149142728609848,
+          "se": 0.009566904881262023,
+          "ci95_low": -0.1104488879669049,
+          "ci95_high": -0.07253396660529206,
+          "p_two_sided": 3.6328026602549877e-16
+        },
+        "class_school_mean": {
+          "estimate": -0.17282295025417344,
+          "se": 0.08527704719683633,
+          "ci95_low": -0.3418051121209317,
+          "ci95_high": -0.0038407883874152227,
+          "p_two_sided": 0.045099905069635925
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.019152876720165052,
+          "se": 0.09324079938342297,
+          "ci95_low": -0.16560999174111582,
+          "ci95_high": 0.20391574518144592,
+          "p_two_sided": 0.8376256646213944
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.08133152296807496,
+          "se": 0.08684864204739891,
+          "ci95_low": -0.2534279049462981,
+          "ci95_high": 0.09076485901014815,
+          "p_two_sided": 0.351062053773369
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.280873898012867,
+        "q01": -1.3302606922138,
+        "q25": -0.5217884458647782,
+        "median": -0.08957019464336446,
+        "q75": 0.3900407745590795,
+        "q99": 2.449544638503576,
+        "max": 3.6854254907341746
+      }
+    },
+    {
+      "label": "four_of_five_distress_items",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 18173,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8205975517633082,
+      "r_squared": 0.17486491142418548,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_within": {
+          "estimate": -0.11975872493428577,
+          "se": 0.01222316281229879,
+          "ci95_low": -0.14397973802945122,
+          "ci95_high": -0.09553771183912033,
+          "p_two_sided": 1.04835911193408e-16
+        },
+        "class_mean": {
+          "estimate": -0.09402907941810563,
+          "se": 0.09432870577444133,
+          "ci95_low": -0.2809477070186378,
+          "ci95_high": 0.09288954818242652,
+          "p_two_sided": 0.3210182342889635
+        },
+        "class_school_within": {
+          "estimate": -0.09374698817107364,
+          "se": 0.009275246945191804,
+          "ci95_low": -0.11212650918132624,
+          "ci95_high": -0.07536746716082104,
+          "p_two_sided": 2.0260546881607473e-17
+        },
+        "class_school_mean": {
+          "estimate": -0.18668771408486404,
+          "se": 0.0840362718381007,
+          "ci95_low": -0.35321119674775403,
+          "ci95_high": -0.020164231421974044,
+          "p_two_sided": 0.028345367442815565
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.025729645516180136,
+          "se": 0.09184406755302958,
+          "ci95_low": -0.1562655055814448,
+          "ci95_high": 0.20772479661380505,
+          "p_two_sided": 0.7798877691868467
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.09294072591379039,
+          "se": 0.0859045097736228,
+          "ci95_low": -0.26316624676401723,
+          "ci95_high": 0.07728479493643643,
+          "p_two_sided": 0.2816384910288288
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.269961924147034,
+        "q01": -1.3272708941155775,
+        "q25": -0.5209573897442747,
+        "median": -0.09064366461861484,
+        "q75": 0.38877499158197626,
+        "q99": 2.4490966121184767,
+        "max": 3.6953374143541504
+      }
+    },
+    {
+      "label": "class_size_lower",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 59,
+      "df": 58,
+      "n": 4521,
+      "classes": 159,
+      "schools": 59,
+      "schools_multiple_classes": 45,
+      "outcome_sd_in_model_sample": 0.8557967152614849,
+      "r_squared": 0.17764874910999362,
+      "rank": 72,
+      "columns": 72,
+      "terms": {
+        "class_within": {
+          "estimate": -0.1050024193762616,
+          "se": 0.037342952583769407,
+          "ci95_low": -0.17975246047279933,
+          "ci95_high": -0.03025237827972388,
+          "p_two_sided": 0.006709748404181864
+        },
+        "class_mean": {
+          "estimate": -0.010460638560870886,
+          "se": 0.28218508389426633,
+          "ci95_low": -0.575315454757014,
+          "ci95_high": 0.5543941776352722,
+          "p_two_sided": 0.9705563825927512
+        },
+        "class_school_within": {
+          "estimate": -0.09109303841087235,
+          "se": 0.02779269293587131,
+          "ci95_low": -0.14672615779208573,
+          "ci95_high": -0.035459919029658976,
+          "p_two_sided": 0.0017715918015410925
+        },
+        "class_school_mean": {
+          "estimate": -0.43700766163921323,
+          "se": 0.15068031258944625,
+          "ci95_low": -0.7386270778659773,
+          "ci95_high": -0.1353882454124492,
+          "p_two_sided": 0.005259487452857944
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.09454178081539072,
+          "se": 0.26988518152725727,
+          "ci95_low": -0.4456921057594309,
+          "ci95_high": 0.6347756673902123,
+          "p_two_sided": 0.7273797967415951
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.3459146232283409,
+          "se": 0.15257630821604973,
+          "ci95_low": -0.65132928705074,
+          "ci95_high": -0.040499959405941754,
+          "p_two_sided": 0.027124008602405623
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.0645794432798987,
+        "q01": -1.374350985164251,
+        "q25": -0.5418789848749033,
+        "median": -0.10192175910948409,
+        "q75": 0.4228427152299572,
+        "q99": 2.4512423028263512,
+        "max": 3.3671274087183924
+      },
+      "reporter_min": 9,
+      "reporter_max": 39
+    },
+    {
+      "label": "class_size_middle",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 73,
+      "df": 72,
+      "n": 8771,
+      "classes": 200,
+      "schools": 73,
+      "schools_multiple_classes": 63,
+      "outcome_sd_in_model_sample": 0.8097641372601824,
+      "r_squared": 0.18992471040886838,
+      "rank": 86,
+      "columns": 86,
+      "terms": {
+        "class_within": {
+          "estimate": -0.11985598196855093,
+          "se": 0.0166942650364307,
+          "ci95_low": -0.15313539109087265,
+          "ci95_high": -0.08657657284622922,
+          "p_two_sided": 5.152555012619085e-10
+        },
+        "class_mean": {
+          "estimate": -0.23961336311234369,
+          "se": 0.17446441524916523,
+          "ci95_low": -0.5874018185905224,
+          "ci95_high": 0.10817509236583508,
+          "p_two_sided": 0.17388271598257105
+        },
+        "class_school_within": {
+          "estimate": -0.09290811447751597,
+          "se": 0.01548199518151764,
+          "ci95_low": -0.12377090781110604,
+          "ci95_high": -0.0620453211439259,
+          "p_two_sided": 7.213249356075262e-08
+        },
+        "class_school_mean": {
+          "estimate": -0.028482420160625,
+          "se": 0.16307173142114215,
+          "ci95_low": -0.3535599755011419,
+          "ci95_high": 0.29659513517989183,
+          "p_two_sided": 0.861835515572853
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": -0.11975738114379275,
+          "se": 0.1774595297325387,
+          "ci95_low": -0.4735164882225578,
+          "ci95_high": 0.23400172593497232,
+          "p_two_sided": 0.501936639246767
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": 0.06442569431689096,
+          "se": 0.16863815179755387,
+          "ci95_low": -0.2717483172407269,
+          "ci95_high": 0.4005997058745089,
+          "p_two_sided": 0.7035606106815097
+        }
+      },
+      "residual_quantiles": {
+        "min": -1.9753231914269,
+        "q01": -1.3482916671114396,
+        "q25": -0.5076573573476373,
+        "median": -0.08553067416736404,
+        "q75": 0.39170023149579225,
+        "q99": 2.458034337620328,
+        "max": 3.7378133641592974
+      },
+      "reporter_min": 40,
+      "reporter_max": 53
+    },
+    {
+      "label": "class_size_upper",
+      "formula": "distress_score ~ class_within + class_mean + class_school_within + class_school_mean + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 31,
+      "df": 30,
+      "n": 4699,
+      "classes": 79,
+      "schools": 31,
+      "schools_multiple_classes": 25,
+      "outcome_sd_in_model_sample": 0.8088392653177646,
+      "r_squared": 0.17756562353646188,
+      "rank": 44,
+      "columns": 44,
+      "terms": {
+        "class_within": {
+          "estimate": -0.12924698160108467,
+          "se": 0.024163010431597465,
+          "ci95_low": -0.17859443226685565,
+          "ci95_high": -0.07989953093531368,
+          "p_two_sided": 8.695536845634352e-06
+        },
+        "class_mean": {
+          "estimate": -0.11097074464725898,
+          "se": 0.2727259086739155,
+          "ci95_low": -0.6679513560517234,
+          "ci95_high": 0.44600986675720544,
+          "p_two_sided": 0.6869738419648601
+        },
+        "class_school_within": {
+          "estimate": -0.09599385188337586,
+          "se": 0.010441019721360389,
+          "ci95_low": -0.11731725887600822,
+          "ci95_high": -0.07467044489074351,
+          "p_two_sided": 3.1200198682578434e-10
+        },
+        "class_school_mean": {
+          "estimate": -0.2483503778306023,
+          "se": 0.2154478422103265,
+          "ci95_low": -0.6883535717462873,
+          "ci95_high": 0.1916528160850827,
+          "p_two_sided": 0.2581291537093338
+        }
+      },
+      "contextual_associations": {
+        "class_support": {
+          "estimate": 0.018276236953825686,
+          "se": 0.2679017407936813,
+          "ci95_low": -0.5288521092642633,
+          "ci95_high": 0.5654045831719148,
+          "p_two_sided": 0.9460632357597963
+        },
+        "school_belonging_aggregated_to_class": {
+          "estimate": -0.15235652594722643,
+          "se": 0.21676559361895142,
+          "ci95_low": -0.5950509272689983,
+          "ci95_high": 0.2903378753745454,
+          "p_two_sided": 0.48755990020262013
+        }
+      },
+      "residual_quantiles": {
+        "min": -2.2413395062293953,
+        "q01": -1.2915067005541438,
+        "q25": -0.4948045574183839,
+        "median": -0.09191984313390722,
+        "q75": 0.3636007629260791,
+        "q99": 2.3814078972230655,
+        "max": 3.370375113740482
+      },
+      "reporter_min": 54,
+      "reporter_max": 87
+    },
+    {
+      "label": "LOO_conditional_association",
+      "formula": "distress_score ~ class_score + class_loo + school_score + class_school_loo + C(gender) + C(grade9) + health + expectstress_p + income5 + medu + fedu + C(migrant_status) + C(school_key)",
+      "weight": "sweight",
+      "uncertainty": "school_key cluster sandwich, finite sample correction, t(G-1)",
+      "clusters": 112,
+      "df": 111,
+      "n": 17991,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111,
+      "outcome_sd_in_model_sample": 0.8218264421168245,
+      "r_squared": 0.17585436098567975,
+      "rank": 125,
+      "columns": 125,
+      "terms": {
+        "class_score": {
+          "estimate": -0.11957917828595777,
+          "se": 0.012907027962161168,
+          "ci95_low": -0.14515531582841254,
+          "ci95_high": -0.09400304074350299,
+          "p_two_sided": 1.7642875355110404e-15
+        },
+        "class_loo": {
+          "estimate": 0.021294778711847456,
+          "se": 0.08994217435407371,
+          "ci95_low": -0.1569316440472197,
+          "ci95_high": 0.19952120147091462,
+          "p_two_sided": 0.8132787663318723
+        },
+        "school_score": {
+          "estimate": -0.09573231158762027,
+          "se": 0.009256692705704492,
+          "ci95_low": -0.11407506613370201,
+          "ci95_high": -0.07738955704153853,
+          "p_two_sided": 5.820070014661857e-18
+        },
+        "class_school_loo": {
+          "estimate": -0.08463202951539249,
+          "se": 0.08315994011575871,
+          "ci95_low": -0.2494190023691194,
+          "ci95_high": 0.08015494333833444,
+          "p_two_sided": 0.31103273683020677
+        }
+      },
+      "contextual_associations": {},
+      "residual_quantiles": {
+        "min": -2.2763436708722264,
+        "q01": -1.3305643785794838,
+        "q25": -0.5219424770076933,
+        "median": -0.09037670832888667,
+        "q75": 0.39037990172643244,
+        "q99": 2.4506702236233355,
+        "max": 3.695244299946582
+      }
+    }
+  ],
+  "old_numerical_provenance": {
+    "historical_sample": {
+      "n": 8827,
+      "classes": 438,
+      "schools": 112,
+      "schools_multiple_classes": 111
+    },
+    "historical_gender_error": "Gender 0=male/1=female; erroneous 1/2 validity rule excluded all males. Old model reproduced only to trace withdrawn submitted numbers.",
+    "old_additive_joint_formula": "z_distress_score ~ z_class_score + z_class_loo + z_school_score + z_class_school_loo + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+    "model_specific_coefficients": {
+      "z_class_score": -0.13592111389716235,
+      "z_class_loo": -0.010386063546561821,
+      "z_school_score": -0.1288746635824379,
+      "z_class_school_loo": -0.03705818498721172
+    },
+    "own_minus_class_aggregate": -0.12553505035060053,
+    "class_aggregate_minus_school_item_class_aggregate": 0.026672121440649902,
+    "old_interaction_model_source": "data_audit/ceps/ceps_redesign_tests.json",
+    "old_interaction_coefficients": [
+      {
+        "label": "class_referent_own_perception_interaction",
+        "formula": "z_distress_score ~ z_class_score * z_class_loo_mean + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+        "n": 8827,
+        "classes": 438,
+        "schools": 112,
+        "r_squared": 0.21158964146345727,
+        "terms": {
+          "z_class_score": {
+            "estimate": -0.20565303902665463,
+            "se": 0.014630625903638615,
+            "p_value": 7.043682422456982e-45,
+            "ci95_low": -0.2343285388690651,
+            "ci95_high": -0.17697753918424416
+          },
+          "z_class_loo_mean": {
+            "estimate": -0.0378923706140841,
+            "se": 0.020260185576881192,
+            "p_value": 0.061443912779670866,
+            "ci95_low": -0.0776016046648691,
+            "ci95_high": 0.0018168634367008996
+          },
+          "z_class_score:z_class_loo_mean": {
+            "estimate": -0.02895144657355191,
+            "se": 0.014988934688260791,
+            "p_value": 0.05341861817093359,
+            "ci95_low": -0.05832921872916616,
+            "ci95_high": 0.00042632558206234447
+          }
+        }
+      },
+      {
+        "label": "referent_mismatch_own_perception_interaction",
+        "formula": "z_distress_score ~ z_school_score * z_class_school_loo_mean + C(school_key) + C(gender) + C(grade9) + z_health + z_expectstress_p + z_income5 + z_medu + z_fedu + C(migrant_status)",
+        "n": 8827,
+        "classes": 438,
+        "schools": 112,
+        "r_squared": 0.21156844538246056,
+        "terms": {
+          "z_school_score": {
+            "estimate": -0.19667875274050636,
+            "se": 0.013970145554295696,
+            "p_value": 5.1488088594514946e-45,
+            "ci95_low": -0.22405973488570827,
+            "ci95_high": -0.16929777059530446
+          },
+          "z_class_school_loo_mean": {
+            "estimate": -0.06096142598653289,
+            "se": 0.021257608149474434,
+            "p_value": 0.004134069555099356,
+            "ci95_low": -0.10262557235696793,
+            "ci95_high": -0.019297279616097854
+          },
+          "z_school_score:z_class_school_loo_mean": {
+            "estimate": -0.025387763923414935,
+            "se": 0.013286381981654926,
+            "p_value": 0.056028882467853786,
+            "ci95_low": -0.0514285940923005,
+            "ci95_high": 0.0006530662454706307
+          }
+        }
+      }
+    ],
+    "old_standardization_sd_precomplete": {
+      "class_score": 0.723236707498751,
+      "class_loo": 0.2662617031970049,
+      "school_score": 0.9269513991455347,
+      "class_school_loo": 0.3150775481393398,
+      "distress_score": 0.8214553078799534
+    }
+  }
+}

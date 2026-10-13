@@ -1,0 +1,148 @@
+{
+  "status": "provider copy acquired read-only; comparison before choosing current inferential input",
+  "files": {
+    "old_local": {
+      "bytes": 95625972,
+      "sha256": "dab2c548a2acfea6b77472c33d4efe640ec40496a4713c7b01b702272c0bc8de",
+      "records": 58461,
+      "positive_id_records": 58458
+    },
+    "provider": {
+      "bytes": 93369076,
+      "sha256": "9e6cd4fa6bf2eee8496d8ed41c62a9a7039138d8ce2819e567a98c5546edfc97",
+      "records": 58461,
+      "positive_id_records": 58461
+    }
+  },
+  "valid_rosters": {
+    "old_local": {
+      "valid_rows": 58450,
+      "distinct_ids": 19487,
+      "conflicting_model_or_age_field_IDs": 1
+    },
+    "provider": {
+      "valid_rows": 58461,
+      "distinct_ids": 19487,
+      "conflicting_model_or_age_field_IDs": 0
+    }
+  },
+  "eligible_roster_field_comparison": {
+    "schids": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "clsids": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "sweight": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "grade9": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "gender": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "classmategood": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "classgood": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "friendly": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "depressed": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "blue": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "unhappy": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "pessimistic": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "sad": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "health": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "expectstress_p": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "income5": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "medu": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "fedu": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "migrant_status": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    },
+    "age": {
+      "different_n": 0,
+      "one_side_missing_n": 0,
+      "max_abs_difference": 0.0
+    }
+  },
+  "identical_eligible_model_and_age_fields": true,
+  "same_eligible_ID_set": true,
+  "comparison_note": "Eligible deduplicated model and age fields are exactly equal. The old eligible duplicate discrepancy is in age, not fitted model fields; the verified provider copy has no eligible duplicate contradiction. Historical fitted coefficients are separately compared against the preserved round1 numerical provenance.",
+  "historical_numerical_comparison": {
+    "canonical_input_fields_identical": true,
+    "historical_parameter_absolute_differences": {
+      "z_class_score": 0.0,
+      "z_class_loo": 0.0,
+      "z_school_score": 0.0,
+      "z_class_school_loo": 0.0
+    },
+    "historical_contrast_absolute_differences": {
+      "own_minus_class_aggregate": 0.0,
+      "class_aggregate_minus_school_item_class_aggregate": 0.0
+    },
+    "all_history_same_to_1e10": true
+  }
+}

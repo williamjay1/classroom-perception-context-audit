@@ -1,0 +1,227 @@
+{
+  "rows": 21409,
+  "fields": {
+    "CHILDID": {
+      "record": 1,
+      "start": 1,
+      "end": 8
+    },
+    "S7_ID": {
+      "record": 1,
+      "start": 49,
+      "end": 52
+    },
+    "J71CLASS": {
+      "record": 1,
+      "start": 146,
+      "end": 148
+    },
+    "J72CLASS": {
+      "record": 1,
+      "start": 149,
+      "end": 151
+    },
+    "C5SDQINR": {
+      "record": 1,
+      "start": 2141,
+      "end": 2145
+    },
+    "C5WEIGHT": {
+      "record": 1,
+      "start": 3188,
+      "end": 3193
+    },
+    "C7WEIGHT": {
+      "record": 1,
+      "start": 3220,
+      "end": 3225
+    },
+    "W8SESL": {
+      "record": 1,
+      "start": 4019,
+      "end": 4023
+    },
+    "C7CLSFR": {
+      "record": 1,
+      "start": 4867,
+      "end": 4868
+    },
+    "C7CLSLIK": {
+      "record": 1,
+      "start": 4869,
+      "end": 4870
+    },
+    "C7CLSFEL": {
+      "record": 1,
+      "start": 4871,
+      "end": 4872
+    },
+    "C7CLSOTH": {
+      "record": 1,
+      "start": 4873,
+      "end": 4874
+    },
+    "C7CLSCAR": {
+      "record": 1,
+      "start": 4875,
+      "end": 4876
+    },
+    "C7LONLY": {
+      "record": 1,
+      "start": 4941,
+      "end": 4942
+    },
+    "C7SAD": {
+      "record": 1,
+      "start": 4945,
+      "end": 4946
+    },
+    "C7NOCNTR": {
+      "record": 1,
+      "start": 4965,
+      "end": 4966
+    },
+    "C7USELES": {
+      "record": 1,
+      "start": 4979,
+      "end": 4980
+    },
+    "C7NOGOOD": {
+      "record": 1,
+      "start": 4981,
+      "end": 4982
+    }
+  },
+  "english_rows_with_context": 9115,
+  "english_schools": 2662,
+  "english_classes": 3755,
+  "english_class_size_quantiles": {
+    "0": 1.0,
+    "0.25": 1.0,
+    "0.5": 1.0,
+    "0.75": 3.0,
+    "1": 34.0
+  },
+  "schools_with_multiple_english_classes": 598,
+  "thresholds": {
+    "3": {
+      "classes": 1072,
+      "students": 5843
+    },
+    "5": {
+      "classes": 539,
+      "students": 4043
+    },
+    "10": {
+      "classes": 97,
+      "students": 1245
+    }
+  },
+  "context_complete_rows": 9018,
+  "context_complete_classes": 3737,
+  "support_icc": {
+    "n": 9018,
+    "groups": 3737,
+    "mean_cluster_size": 2.4131656408884132,
+    "icc1": 0.029059516231934725,
+    "icc2": 0.06735925693680621
+  },
+  "outcome_icc": {
+    "n": 9018,
+    "groups": 3737,
+    "mean_cluster_size": 2.4131656408884132,
+    "icc1": 0.04467995726240641,
+    "icc2": 0.10141667080762536
+  },
+  "threshold_icc": {
+    "3": {
+      "classes": 1055,
+      "students": 5748,
+      "support": {
+        "n": 5748,
+        "groups": 1055,
+        "mean_cluster_size": 5.448341232227488,
+        "icc1": 0.03867456659783589,
+        "icc2": 0.1797828187305009
+      },
+      "outcome": {
+        "n": 5748,
+        "groups": 1055,
+        "mean_cluster_size": 5.448341232227488,
+        "icc1": 0.044661357772339434,
+        "icc2": 0.20300043240237964
+      }
+    },
+    "5": {
+      "classes": 527,
+      "students": 3957,
+      "support": {
+        "n": 3957,
+        "groups": 527,
+        "mean_cluster_size": 7.50853889943074,
+        "icc1": 0.046762395352332564,
+        "icc2": 0.2691884492706771
+      },
+      "outcome": {
+        "n": 3957,
+        "groups": 527,
+        "mean_cluster_size": 7.50853889943074,
+        "icc1": 0.04299911566778847,
+        "icc2": 0.2522621030317067
+      }
+    },
+    "10": {
+      "classes": 93,
+      "students": 1198,
+      "support": {
+        "n": 1198,
+        "groups": 93,
+        "mean_cluster_size": 12.881720430107526,
+        "icc1": 0.06744792060117648,
+        "icc2": 0.48231738735729435
+      },
+      "outcome": {
+        "n": 1198,
+        "groups": 93,
+        "mean_cluster_size": 12.881720430107526,
+        "icc1": 0.04041612674429223,
+        "icc2": 0.35172586903874026
+      }
+    }
+  },
+  "prior_outcome_nonmissing": 14401,
+  "class_summary": {
+    "support_mean": {
+      "mean": 3.799184135217808,
+      "sd": 0.7455337787981873,
+      "min": 1.0,
+      "max": 5.0
+    },
+    "support_sd": {
+      "mean": 0.756005259983296,
+      "sd": 0.4345722390322135,
+      "min": 0.0,
+      "max": 2.6870057685088806
+    },
+    "support_p25": {
+      "mean": 3.651254348407814,
+      "sd": 0.8112075705773801,
+      "min": 1.0,
+      "max": 5.0
+    },
+    "outcome_mean": {
+      "mean": 1.6871774715765304,
+      "sd": 0.5021177714290247,
+      "min": 1.0,
+      "max": 4.0
+    },
+    "outcome_sd": {
+      "mean": 0.4922999874573326,
+      "sd": 0.3099292368623581,
+      "min": 0.0,
+      "max": 1.979898987322333
+    }
+  },
+  "public_historical_notice": "Retained solely to reproduce withdrawn-number provenance. Historical labels such as prespecified or frozen indicate an internal execution history, not public preregistration. The current revision is exploratory and supersedes historical construct-validity interpretations.",
+  "historical_error_notice": "C7WEIGHT/C5WEIGHT are physical body weights; do not treat them as survey weights. Historical SES extraction removed valid negatives. This file is not a diagnostic of the final C7PW0-weighted sample."
+}

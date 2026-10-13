@@ -1,0 +1,132 @@
+%% Nature-style table blocks used by manuscript.tex.
+%% Kept separately so that regenerating the manuscript preserves this styling.
+
+%%%%% TABLE 1 BEGIN %%%%%
+\begin{table}[tbp]
+\caption{Data sources and model samples}\label{tab1}
+\BMCVisualTableStyle
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X S[table-format=5.0] S[table-format=3.0] S[table-format=3.0] >{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Source} & \textbf{Outcome} & {\textbf{Students}} & {\textbf{Classes}} & {\textbf{Schools}} & \textbf{95\% interval method}\\
+\midrule
+CEPS & Negative affect & 17991 & 438 & 112 & School clustered t intervals\\
+ECLS K Grade 8 & Internalizing problems & 3623 & 538 & 433 & 90 C7PW JK2 replicates\\
+\addlinespace[6pt]
+TIMSS Finland & Belonging & 4786 & 353 & 154 & 150 JRR replicates\\
+TIMSS South Africa & Belonging & 20365 & 521 & 519 & 150 JRR replicates\\
+TIMSS Korea & Belonging & 3847 & 168 & 168 & 150 JRR replicates\\
+\addlinespace[6pt]
+ICCS Norway & Bullying fear & 5347 & 264 & 141 & 75 supplied replicates\\
+ICCS Sweden & Bullying fear & 3113 & 148 & 148 & 75 supplied replicates\\
+ICCS Poland & Bullying fear & 4362 & 235 & 169 & 75 supplied replicates\\
+ICCS France & Bullying fear & 3347 & 147 & 146 & 75 supplied replicates\\
+ICCS Denmark & Bullying fear & 4184 & 247 & 133 & 75 supplied replicates\\
+ICCS Italy & Bullying fear & 2877 & 159 & 158 & 75 supplied replicates\\
+\bottomrule
+\end{tabularx}
+{\BMCVisualTableNotes
+\footnotetext{Samples are complete cases for the displayed primary domain and outcome; other TIMSS domains can have different samples. CEPS and Finland include school fixed effects. ECLS K and country level ICCS omit them. South Africa and Korea cannot separate class differences from school differences. The four surveys are analyzed separately and do not constitute equivalent measures or pooled validation.}
+}
+\end{table}
+%%%%% TABLE 1 END %%%%%
+
+%%%%% TABLE 2 BEGIN %%%%%
+\begin{table}[tbp]
+\caption{CEPS within and between class associations}\label{tab2}
+\BMCVisualTableStyle
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X S[table-format=-1.3] S[table-format=-1.3] S[table-format=-1.3]@{}}
+\toprule
+\textbf{Domain and estimand} & {\textbf{Estimate}} & {\textbf{95\% lower}} & {\textbf{95\% upper}}\\
+\midrule
+\multicolumn{4}{@{}l@{}}{\textbf{Classmates and class atmosphere}}\\[2pt]
+\hspace{0.65em}Within class $\beta_{\mathrm{W}}$ & -0.120 & -0.145 & -0.095\\
+\hspace{0.65em}Between class $\beta_{\mathrm{B}}$ & -0.096 & -0.284 & 0.091\\
+\hspace{0.65em}Contextual $\beta_{\mathrm{B}} - \beta_{\mathrm{W}}$ & 0.024 & -0.159 & 0.207\\
+\addlinespace[7pt]
+\multicolumn{4}{@{}l@{}}{\textbf{School belonging aggregated within classes}}\\[2pt]
+\hspace{0.65em}Within class $\beta_{\mathrm{W}}$ & -0.094 & -0.113 & -0.075\\
+\hspace{0.65em}Between class $\beta_{\mathrm{B}}$ & -0.183 & -0.349 & -0.018\\
+\hspace{0.65em}Contextual $\beta_{\mathrm{B}} - \beta_{\mathrm{W}}$ & -0.090 & -0.259 & 0.080\\
+\addlinespace[7pt]
+\multicolumn{4}{@{}l@{}}{\textbf{Class items only model}}\\[2pt]
+\hspace{0.65em}Within class $\beta_{\mathrm{W}}$ & -0.180 & -0.203 & -0.156\\
+\hspace{0.65em}Between class $\beta_{\mathrm{B}}$ & -0.243 & -0.368 & -0.117\\
+\hspace{0.65em}Contextual $\beta_{\mathrm{B}} - \beta_{\mathrm{W}}$ & -0.063 & -0.184 & 0.058\\
+\bottomrule
+\end{tabularx}
+{\BMCVisualTableNotes
+\footnotetext{The first six rows are from the primary joint weighted model with 17991 students, 438 classes and 112 schools; each domain conditions on the other's two terms. The last three rows omit school belonging while retaining the same students and other covariates. All models include school fixed effects. Estimates are negative affect points (1 to 5) per one domain point (1 to 4). $\beta_{\mathrm{B}}$ is a between class association within school; $\beta_{\mathrm{B}} - \beta_{\mathrm{W}}$ uses the two coefficients and their covariance in the same model. Intervals use school clustered covariance and t(111). The two domains differ in content and referent, so their comparison cannot isolate a wording effect.}
+}
+\end{table}
+%%%%% TABLE 2 END %%%%%
+
+%%%%% TABLE 3 BEGIN %%%%%
+\begin{table}[tbp]
+\caption{CEPS contextual association sensitivities}\label{tab3}
+\BMCVisualTableStyle
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X S[table-format=5.0] S[table-format=3.0] S[table-format=-1.3] S[table-format=-1.3] @{\hspace{0.2em}to\hspace{0.2em}} S[table-format=-1.3]@{}}
+\toprule
+\textbf{Specification} & {\textbf{Students}} & {\textbf{Classes}} & {\boldmath$\beta_{\mathrm{B}} - \beta_{\mathrm{W}}$} & \multicolumn{2}{c@{}}{\textbf{95\% CI}}\\
+\midrule
+Primary joint model & 17991 & 438 & 0.024 & -0.159 & 0.207\\
+Class clustered intervals & 17991 & 438 & 0.024 & -0.140 & 0.188\\
+Unweighted & 17991 & 438 & 0.047 & -0.095 & 0.189\\
+No school fixed effects & 17991 & 438 & 0.021 & -0.120 & 0.161\\
+Class items only & 17991 & 438 & -0.063 & -0.184 & 0.058\\
+\addlinespace[6pt]
+At least 10 reporters & 17982 & 437 & 0.026 & -0.156 & 0.209\\
+At least 20 reporters & 17835 & 427 & 0.027 & -0.157 & 0.211\\
+At least 30 reporters & 16578 & 373 & -0.011 & -0.203 & 0.182\\
+\addlinespace[6pt]
+At least one class item & 18107 & 438 & 0.019 & -0.166 & 0.204\\
+At least four affect items & 18173 & 438 & 0.026 & -0.156 & 0.208\\
+\addlinespace[6pt]
+Lower reporter count stratum & 4521 & 159 & 0.095 & -0.446 & 0.635\\
+Middle reporter count stratum & 8771 & 200 & -0.120 & -0.474 & 0.234\\
+Upper reporter count stratum & 4699 & 79 & 0.018 & -0.529 & 0.565\\
+\addlinespace[6pt]
+Classmates treatment item & 17991 & 438 & 0.088 & -0.087 & 0.262\\
+Class atmosphere item & 17991 & 438 & -0.016 & -0.137 & 0.105\\
+Ordinal controls as factors & 17991 & 438 & 0.015 & -0.166 & 0.197\\
+\bottomrule
+\end{tabularx}
+{\BMCVisualTableNotes
+\footnotetext{Units are negative affect points per one perception point. Joint domain adjustment is used unless designated class items only. Intervals use school clustered finite sample t inference, except the class clustered row. Reporter thresholds apply to both aggregate pools. Stratum cut points 39 and 54 are percentiles of reporter counts repeated over analytic student records, not enrollment quartiles. Strata are exploratory, with no formal moderation test. The no school fixed effect model includes school differences. Separate item and ordinal-factor sensitivities retain the primary sample and reporter pool; each item is fitted in its own joint model. Full components appear in Table S3f.}
+}
+\end{table}
+%%%%% TABLE 3 END %%%%%
+
+%%%%% TABLE 4 BEGIN %%%%%
+\begin{table}[tbp]
+\caption{Exploratory associations in other surveys}\label{tab4}
+\BMCVisualTableStyle
+\setlength{\tabcolsep}{2pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{26mm} S[table-format=4.0] *{3}{>{\centering\arraybackslash}X}@{}}
+\toprule
+\textbf{Source and domain} & {\textbf{Students}} & \shortstack[c]{\textbf{Within}\\\boldmath$\beta_{\mathrm{W}}$} & \shortstack[c]{\textbf{Between}\\\boldmath$\beta_{\mathrm{B}}$} & \shortstack[c]{\boldmath$\beta_{\mathrm{B}} - \beta_{\mathrm{W}}$}\\
+\midrule
+ECLS K Grade 8 & 3623 & \BMCVisualEffect{-0.093}{-0.137}{-0.050} & \BMCVisualEffect{-0.049}{-0.116}{0.019} & \BMCVisualEffect{0.044}{-0.041}{0.130}\\
+\addlinespace[7pt]
+TIMSS Finland belonging & 4786 & \BMCVisualEffect{1.263}{1.170}{1.356} & \BMCVisualEffect{0.788}{0.418}{1.158} & \BMCVisualEffect{-0.475}{-0.858}{-0.093}\\
+\addlinespace[7pt]
+ICCS Norway openness & 5347 & \BMCVisualEffect{-0.038}{-0.083}{0.006} & \BMCVisualEffect{-0.040}{-0.193}{0.113} & \BMCVisualEffect{-0.001}{-0.150}{0.147}\\
+\addlinespace[5pt]
+ICCS Sweden openness & 3113 & \BMCVisualEffect{-0.019}{-0.098}{0.060} & \BMCVisualEffect{0.074}{-0.071}{0.219} & \BMCVisualEffect{0.093}{-0.062}{0.248}\\
+\addlinespace[5pt]
+ICCS Poland openness & 4362 & \BMCVisualEffect{0.032}{-0.032}{0.096} & \BMCVisualEffect{-0.059}{-0.206}{0.088} & \BMCVisualEffect{-0.091}{-0.261}{0.080}\\
+\addlinespace[5pt]
+ICCS France openness & 3347 & \BMCVisualEffect{0.025}{-0.033}{0.082} & \BMCVisualEffect{-0.065}{-0.220}{0.090} & \BMCVisualEffect{-0.090}{-0.254}{0.075}\\
+\addlinespace[5pt]
+ICCS Denmark openness & 4184 & \BMCVisualEffect{-0.016}{-0.063}{0.031} & \BMCVisualEffect{-0.110}{-0.230}{0.011} & \BMCVisualEffect{-0.093}{-0.213}{0.026}\\
+\addlinespace[5pt]
+ICCS Italy openness & 2877 & \BMCVisualEffect{0.016}{-0.051}{0.083} & \BMCVisualEffect{0.258}{0.078}{0.439} & \BMCVisualEffect{0.242}{0.043}{0.441}\\
+\bottomrule
+\end{tabularx}
+{\BMCVisualTableNotes
+\footnotetext{Coefficients (95\% intervals) are outcome points per predictor point; the last column is the same-model difference. ECLS: internalizing 1 to 4, support 1 to 5, 90 C7PW JK2 replicates. Finland: supplied belonging scale, instruction 1 to 4, 150 JRR replicates, school fixed effects. ICCS: fear and openness 1 to 4 (higher means more), safety-adjusted country models, 75 replicates; between class estimates include school variation. Domains and scales differ across rows. Full TIMSS and safety results appear in Additional file 1.}
+}
+\end{table}
+%%%%% TABLE 4 END %%%%%

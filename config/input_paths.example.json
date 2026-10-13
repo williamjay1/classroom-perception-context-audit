@@ -1,0 +1,6 @@
+{
+  "ceps": "F:\\AcademicData\\BMC_Classroom_Revision\\raw\\ceps\\CEPS_baseline_pooled.dta",
+  "ecls": "D:\\MLWork\\BMC_Classroom_Revision_Reproduction\\datasets\\ecls_grade8_survey_extract.csv",
+  "timss_root": "F:\\AcademicData\\BMC_Classroom_Revision\\raw\\timss2019",
+  "iccs_root": "F:\\AcademicData\\BMC_Classroom_Revision\\raw\\iccs2022\\Data"
+}

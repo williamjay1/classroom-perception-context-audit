@@ -1,0 +1,134 @@
+{
+  "Figure_1": {
+    "canvas_mm": [
+      130.74304690743048,
+      91.0
+    ],
+    "raster_dpi": 1200,
+    "style_audit": {
+      "nominal_mm": [
+        130.7,
+        91.0
+      ],
+      "tight_mm": [
+        126.8,
+        85.9
+      ],
+      "tight_growth_mm": -3.9,
+      "tight_within_max": true,
+      "max_width_mm": 130.74304690743048,
+      "panel_titles": [],
+      "left_titles_found": 0,
+      "min_font_pt": null,
+      "fonts_under_5pt": [],
+      "pdf_fonttype": 42,
+      "ok": true
+    },
+    "geometry_audit": {
+      "text_count": 16,
+      "text_overlaps": [],
+      "text_outside_canvas": [],
+      "text_line_intersections": [],
+      "minimum_font_pt": 7.0
+    },
+    "data": null
+  },
+  "Figure_2": {
+    "canvas_mm": [
+      130.74304690743048,
+      129.0
+    ],
+    "raster_dpi": 1200,
+    "style_audit": {
+      "nominal_mm": [
+        130.7,
+        129.0
+      ],
+      "tight_mm": [
+        126.8,
+        122.8
+      ],
+      "tight_growth_mm": -3.9,
+      "tight_within_max": true,
+      "max_width_mm": 130.74304690743048,
+      "panel_titles": [],
+      "left_titles_found": 0,
+      "min_font_pt": 6.7,
+      "fonts_under_5pt": [],
+      "pdf_fonttype": 42,
+      "ok": true
+    },
+    "geometry_audit": {
+      "text_count": 42,
+      "text_overlaps": [],
+      "text_outside_canvas": [],
+      "text_line_intersections": [],
+      "minimum_font_pt": 6.7
+    },
+    "data": [
+      {
+        "survey": "CEPS",
+        "estimand": "Within class",
+        "estimate": -0.12004291090505297,
+        "lower": -0.14480672495336303,
+        "upper": -0.09527909685674289
+      },
+      {
+        "survey": "CEPS",
+        "estimand": "Between class",
+        "estimate": -0.09612284938807023,
+        "lower": -0.2836900329646926,
+        "upper": 0.09144433418855213
+      },
+      {
+        "survey": "CEPS",
+        "estimand": "Between \u2212 within",
+        "estimate": 0.02392006151698274,
+        "lower": -0.1587713064409081,
+        "upper": 0.2066114294748736
+      },
+      {
+        "survey": "ECLS K Grade 8",
+        "estimand": "Within class",
+        "estimate": -0.09320784353747136,
+        "lower": -0.13677157984540722,
+        "upper": -0.049644107229535495
+      },
+      {
+        "survey": "ECLS K Grade 8",
+        "estimand": "Between class",
+        "estimate": -0.048712192752601365,
+        "lower": -0.11624200775599619,
+        "upper": 0.01881762225079347
+      },
+      {
+        "survey": "ECLS K Grade 8",
+        "estimand": "Between \u2212 within",
+        "estimate": 0.04449565078486999,
+        "lower": -0.0405478024968828,
+        "upper": 0.12953910406662278
+      },
+      {
+        "survey": "TIMSS Finland",
+        "estimand": "Within class",
+        "estimate": 1.2630010644076985,
+        "lower": 1.1698529025148336,
+        "upper": 1.3561492263005634
+      },
+      {
+        "survey": "TIMSS Finland",
+        "estimand": "Between class",
+        "estimate": 0.787554305434058,
+        "lower": 0.41751822123937943,
+        "upper": 1.1575903896287367
+      },
+      {
+        "survey": "TIMSS Finland",
+        "estimand": "Between \u2212 within",
+        "estimate": -0.4754467589736405,
+        "lower": -0.8576648181302123,
+        "upper": -0.09322869981706872
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "Figure_1": {
+    "pdf_dimensions_mm": [
+      130.74304241604275,
+      91.0000010172526
+    ],
+    "pdf_raster_image_count": 0,
+    "pdf_vector_paths": 9,
+    "fonts": [
+      {
+        "name": "EMTKNI+DejaVuSans-Oblique",
+        "type": "Type0",
+        "embedded_bytes": 5280
+      },
+      {
+        "name": "GALJEF+DejaVuSans",
+        "type": "Type0",
+        "embedded_bytes": 5324
+      },
+      {
+        "name": "FZGIDX+ArialMT",
+        "type": "Type0",
+        "embedded_bytes": 28720
+      },
+      {
+        "name": "CASYZD+Arial-BoldMT",
+        "type": "Type0",
+        "embedded_bytes": 22464
+      }
+    ],
+    "svg_text_elements": 23,
+    "png_pixels": [
+      6176,
+      4299
+    ],
+    "png_dpi": [
+      1199.9976,
+      1199.9976
+    ],
+    "file_bytes": {
+      "pdf": 46142,
+      "svg": 13207,
+      "png": 462054
+    }
+  },
+  "Figure_2": {
+    "pdf_dimensions_mm": [
+      130.74304241604275,
+      128.99999635484482
+    ],
+    "pdf_raster_image_count": 0,
+    "pdf_vector_paths": 57,
+    "fonts": [
+      {
+        "name": "HHICEG+ArialMT",
+        "type": "Type0",
+        "embedded_bytes": 43220
+      },
+      {
+        "name": "BGWXRP+Arial-BoldMT",
+        "type": "Type0",
+        "embedded_bytes": 26024
+      }
+    ],
+    "svg_text_elements": 42,
+    "png_pixels": [
+      6176,
+      6094
+    ],
+    "png_dpi": [
+      1199.9976,
+      1199.9976
+    ],
+    "file_bytes": {
+      "pdf": 49894,
+      "svg": 24974,
+      "png": 676763
+    }
+  },
+  "manuscript": {
+    "pages": 21,
+    "blank_pages": [],
+    "fonts_type3": []
+  },
+  "manuscript_marked": {
+    "pages": 21,
+    "blank_pages": [],
+    "fonts_type3": []
+  }
+}
